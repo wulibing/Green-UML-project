@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="GreenRelationshipNew"
+      label="GreenRelationshipNew"
+      version="3.5.1"
+      provider-name="UB CSE"
+      os="linux,macosx,win32"
+      ws="gtk,win32"
+      arch="ia64,ia64_32,PA_RISC,ppc,sparc,x86,x86_64">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <url>
+      <update label="Green New Update Site" url="http://www.cse.buffalo.edu/faculty/alphonce/green/"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.draw2d"/>
+      <import plugin="org.eclipse.gef"/>
+      <import plugin="org.eclipse.jdt.core"/>
+      <import plugin="org.eclipse.jface"/>
+      <import plugin="edu.buffalo.cse.greennew"/>
+   </requires>
+
+   <plugin
+         id="edu.buffalo.cse.green.relationship.association"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="edu.buffalo.cse.green.relationship.composition"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="edu.buffalo.cse.green.relationship.dependency"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="edu.buffalo.cse.green.relationship.generalization"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="edu.buffalo.cse.green.relationship.realization"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>

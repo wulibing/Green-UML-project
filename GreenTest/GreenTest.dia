@@ -1,0 +1,88 @@
+<uml>
+   <greenVersion="20501"/>
+   <type>
+      <name="=GreenTest/<nonDefaultPackage{Foo1.java[Foo1"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="3"/>
+      <y="93"/>
+   </type>
+   <type>
+      <name="=GreenTest/<nonDefaultPackage{IBar.java[IBar"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="200"/>
+      <y="0"/>
+   </type>
+   <type>
+      <name="=GreenTest/C:\/Program Files\/Java\/jre1.5.0_06\/lib\/rt.jar<java.lang(ArrayIndexOutOfBoundsException.class[ArrayIndexOutOfBoundsException"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="103"/>
+      <y="1929"/>
+   </type>
+   <type>
+      <name="=GreenTest/<nonDefaultPackage{IFoo.java[IFoo"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="314"/>
+      <y="209"/>
+   </type>
+   <type>
+      <name="=GreenTest/<nonDefaultPackage{Foo2.java[Foo2"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="303"/>
+      <y="60"/>
+   </type>
+   <type>
+      <name="=GreenTest/<nonDefaultPackage{Glorp.java[Glorp"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="372"/>
+      <y="316"/>
+   </type>
+   <type>
+      <name="=GreenTest/C:\/Program Files\/Java\/jre1.5.0_06\/lib\/rt.jar<java.lang(IndexOutOfBoundsException.class[IndexOutOfBoundsException"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="99"/>
+      <y="613"/>
+   </type>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.realization.RealizationPart"/>
+      <sourceType="=GreenTest/<nonDefaultPackage{Foo2.java[Foo2"/>
+      <targetType="=GreenTest/<nonDefaultPackage{IFoo.java[IFoo"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.realization.RealizationPart"/>
+      <sourceType="=GreenTest/<nonDefaultPackage{Foo1.java[Foo1"/>
+      <targetType="=GreenTest/<nonDefaultPackage{IBar.java[IBar"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.composition.CompositionPart"/>
+      <sourceType="=GreenTest/<nonDefaultPackage{Foo1.java[Foo1"/>
+      <targetType="=GreenTest/C:\/Program Files\/Java\/jre1.5.0_06\/lib\/rt.jar<java.lang(ArrayIndexOutOfBoundsException.class[ArrayIndexOutOfBoundsException"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.realization.RealizationPart"/>
+      <sourceType="=GreenTest/<nonDefaultPackage{Foo1.java[Foo1"/>
+      <targetType="=GreenTest/<nonDefaultPackage{IFoo.java[IFoo"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=GreenTest/C:\/Program Files\/Java\/jre1.5.0_06\/lib\/rt.jar<java.lang(ArrayIndexOutOfBoundsException.class[ArrayIndexOutOfBoundsException"/>
+      <targetType="=GreenTest/C:\/Program Files\/Java\/jre1.5.0_06\/lib\/rt.jar<java.lang(IndexOutOfBoundsException.class[IndexOutOfBoundsException"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+</uml>
+

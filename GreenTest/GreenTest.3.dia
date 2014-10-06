@@ -1,0 +1,40 @@
+<uml>
+   <greenVersion="20500"/>
+   <type>
+      <name="=GreenTest/<nonDefaultPackage{Glorp.java[Glorp"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="23"/>
+      <y="10"/>
+   </type>
+   <type>
+      <name="=GreenTest/<nonDefaultPackage{Foo2.java[Foo2"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="325"/>
+      <y="429"/>
+   </type>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=GreenTest/<nonDefaultPackage{Glorp.java[Glorp"/>
+      <targetType="=GreenTest/<nonDefaultPackage{Foo2.java[Foo2"/>
+      <bendpoints>
+         <bendpoint>
+            <x="443"/>
+            <y="179"/>
+         </bendpoint>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=GreenTest/<nonDefaultPackage{Glorp.java[Glorp"/>
+      <targetType="=GreenTest/<nonDefaultPackage{Foo2.java[Foo2"/>
+      <bendpoints>
+         <bendpoint>
+            <x="544"/>
+            <y="116"/>
+         </bendpoint>
+      </bendpoints>
+   </relationship>
+</uml>
+

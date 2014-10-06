@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository class='org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository' version='1.0.0'?>
+<repository name='Green Update Site - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.compressed' value='false'/>
+    <property name='p2.timestamp' value='1223499614109'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='16'>
+    <artifact classifier='org.eclipse.update.feature' id='GreenSVGSave' version='1.0.0'>
+      <properties size='2'>
+        <property name='artifact.size' value='5971'/>
+        <property name='download.size' value='5971'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.buffalo.cse.green.relationship.composition' version='2.5.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='6643'/>
+        <property name='download.size' value='6643'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.buffalo.cse.green.relationship.composition' version='2.5.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='6648'/>
+        <property name='download.size' value='6648'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.buffalo.cse.green.relationship.association' version='2.5.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='7583'/>
+        <property name='download.size' value='7583'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.buffalo.cse.green.relationship.dependency' version='2.5.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='12003'/>
+        <property name='download.size' value='12003'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='GreenRelationships' version='2.5.0'>
+      <properties size='2'>
+        <property name='artifact.size' value='5892'/>
+        <property name='download.size' value='5892'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.buffalo.cse.green' version='3.1.0.RC1'>
+      <properties size='3'>
+        <property name='artifact.size' value='407135'/>
+        <property name='download.size' value='407135'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.buffalo.cse.green.help' version='3.1.0.RC1'>
+      <properties size='3'>
+        <property name='artifact.size' value='652345'/>
+        <property name='download.size' value='652345'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.buffalo.cse.green.relationship.realization' version='2.5.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='5102'/>
+        <property name='download.size' value='5102'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.buffalo.cse.green' version='3.1.0.RC1'>
+      <properties size='3'>
+        <property name='artifact.size' value='407109'/>
+        <property name='download.size' value='407109'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='Green' version='3.1.0.RC1'>
+      <properties size='2'>
+        <property name='artifact.size' value='6476'/>
+        <property name='download.size' value='6476'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.buffalo.cse.green.relationship.realization' version='2.5.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='5101'/>
+        <property name='download.size' value='5101'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.buffalo.cse.green.save.svg' version='1.0.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='2499'/>
+        <property name='download.size' value='2499'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.buffalo.cse.green.help' version='3.1.0.RC1'>
+      <properties size='3'>
+        <property name='artifact.size' value='648157'/>
+        <property name='download.size' value='648157'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.buffalo.cse.green.relationship.generalization' version='2.5.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='5565'/>
+        <property name='download.size' value='5565'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.buffalo.cse.green.relationship.generalization' version='2.5.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='5562'/>
+        <property name='download.size' value='5562'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>

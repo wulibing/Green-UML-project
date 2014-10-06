@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/GreenRelationships_3.5.0.jar" id="GreenRelationships" version="3.5.0" os="linux,macosx,win32" ws="gtk,win32" arch="ia64,ia64_32,PA_RISC,ppc,sparc,x86,x86_64">
+      <category name="GreenCategory"/>
+   </feature>
+   <feature url="features/Green_3.5.1.jar" id="Green" version="3.5.1" os="linux,macosx,win32" ws="gtk,win32" arch="ia64,ia64_32,PA_RISC,ppc,sparc,x86,x86_64">
+      <category name="GreenCategory"/>
+   </feature>
+   <category-def name="GreenCategory" label="Green Category">
+      <description>
+         Default category.
+      </description>
+   </category-def>
+</site>
