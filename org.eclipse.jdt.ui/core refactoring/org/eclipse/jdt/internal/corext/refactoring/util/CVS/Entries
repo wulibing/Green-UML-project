@@ -1,0 +1,17 @@
+/AbstractExceptionAnalyzer.java/1.1/Tue Apr 15 20:45:22 2008//
+/Changes.java/1.1/Tue Apr 15 20:45:20 2008//
+/CodeAnalyzer.java/1.1/Tue Apr 15 20:45:20 2008//
+/CommentAnalyzer.java/1.1/Tue Apr 15 20:45:19 2008//
+/JavaElementUtil.java/1.1/Tue Apr 15 20:45:22 2008//
+/JavadocUtil.java/1.1/Tue Apr 15 20:45:20 2008//
+/NoCommentSourceRangeComputer.java/1.1/Tue Apr 15 20:45:17 2008//
+/QualifiedNameFinder.java/1.1/Tue Apr 15 20:45:18 2008//
+/QualifiedNameSearchResult.java/1.1/Tue Apr 15 20:45:17 2008//
+/RefactoringASTParser.java/1.1/Tue Apr 15 20:45:20 2008//
+/RefactoringFileBuffers.java/1.1/Tue Apr 15 20:45:21 2008//
+/ResourceUtil.java/1.1/Tue Apr 15 20:45:19 2008//
+/SelectionAwareSourceRangeComputer.java/1.1/Tue Apr 15 20:45:21 2008//
+/StatementAnalyzer.java/1.1/Tue Apr 15 20:45:18 2008//
+/TextChangeManager.java/1.1/Tue Apr 15 20:45:21 2008//
+/TextEditBasedChangeManager.java/1.1/Tue Apr 15 20:45:19 2008//
+/TightSourceRangeComputer.java/1.1/Tue Apr 15 20:45:18 2008//

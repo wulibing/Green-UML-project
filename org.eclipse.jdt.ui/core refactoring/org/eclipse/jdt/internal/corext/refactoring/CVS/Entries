@@ -1,0 +1,42 @@
+/AbstractJavaElementRenameChange.java/1.1/Tue Apr 15 20:38:50 2008//
+/Checks.java/1.1/Tue Apr 15 20:38:48 2008//
+/CollectingSearchRequestor.java/1.1/Tue Apr 15 20:38:47 2008//
+/CuCollectingSearchRequestor.java/1.1/Tue Apr 15 20:38:50 2008//
+/ExceptionInfo.java/1.1/Tue Apr 15 20:38:51 2008//
+/IRefactoringSearchRequestor.java/1.1/Tue Apr 15 20:38:51 2008//
+/JDTRefactoringContribution.java/1.1/Tue Apr 15 20:38:53 2008//
+/JDTRefactoringDescriptor.java/1.1/Tue Apr 15 20:38:46 2008//
+/JDTRefactoringDescriptorComment.java/1.1/Tue Apr 15 20:38:46 2008//
+/JavaRefactoringArguments.java/1.1/Tue Apr 15 20:38:52 2008//
+/ParameterInfo.java/1.1/Tue Apr 15 20:38:48 2008//
+/RefactoringAvailabilityTester.java/1.1/Tue Apr 15 20:38:44 2008//
+/RefactoringCoreMessages.java/1.1/Tue Apr 15 20:38:49 2008//
+/RefactoringElementFilter.java/1.1/Tue Apr 15 20:38:45 2008//
+/RefactoringExecutionStarter.java/1.1/Tue Apr 15 20:38:45 2008//
+/RefactoringScopeFactory.java/1.1/Tue Apr 15 20:38:49 2008//
+/RefactoringSearchEngine.java/1.1/Tue Apr 15 20:38:52 2008//
+/RefactoringSearchEngine2.java/1.1/Tue Apr 15 20:38:51 2008//
+/ReturnTypeInfo.java/1.1/Tue Apr 15 20:38:54 2008//
+/SearchResultGroup.java/1.1/Tue Apr 15 20:38:50 2008//
+/StubTypeContext.java/1.1/Tue Apr 15 20:38:53 2008//
+/TypeContextChecker.java/1.1/Tue Apr 15 20:38:47 2008//
+/TypedSource.java/1.1/Tue Apr 15 20:38:54 2008//
+D/base////
+D/binary////
+D/changes////
+D/code////
+D/delegates////
+D/generics////
+D/nls////
+D/participants////
+/refactoring.properties/1.1/Tue Apr 15 20:38:47 2008//
+D/rename////
+D/reorg////
+D/scripting////
+D/sef////
+D/structure////
+D/surround////
+D/tagging////
+D/typeconstraints////
+D/typeconstraints2////
+D/util////

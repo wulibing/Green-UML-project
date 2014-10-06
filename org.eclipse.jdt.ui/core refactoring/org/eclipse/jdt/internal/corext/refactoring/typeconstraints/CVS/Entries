@@ -1,0 +1,24 @@
+/ASTCreator.java/1.1/Tue Apr 15 20:37:36 2008//
+/CompilationUnitRange.java/1.1/Tue Apr 15 20:37:38 2008//
+/CompositeOrTypeConstraint.java/1.1/Tue Apr 15 20:37:37 2008//
+/ConstraintCollector.java/1.1/Tue Apr 15 20:37:43 2008//
+/ConstraintCreator.java/1.1/Tue Apr 15 20:37:43 2008//
+/ConstraintOperator.java/1.1/Tue Apr 15 20:37:36 2008//
+/ConstraintVariable.java/1.1/Tue Apr 15 20:37:43 2008//
+/ConstraintVariableFactory.java/1.1/Tue Apr 15 20:37:39 2008//
+/DeclaringTypeVariable.java/1.1/Tue Apr 15 20:37:39 2008//
+/ExpressionVariable.java/1.1/Tue Apr 15 20:37:38 2008//
+/FullConstraintCreator.java/1.1/Tue Apr 15 20:37:42 2008//
+/IConstraintVariableFactory.java/1.1/Tue Apr 15 20:37:38 2008//
+/IContext.java/1.1/Tue Apr 15 20:37:44 2008//
+/ITypeConstraint.java/1.1/Tue Apr 15 20:37:42 2008//
+/ITypeConstraintFactory.java/1.1/Tue Apr 15 20:37:41 2008//
+/NullContext.java/1.1/Tue Apr 15 20:37:40 2008//
+/ParameterTypeVariable.java/1.1/Tue Apr 15 20:37:44 2008//
+/RawBindingVariable.java/1.1/Tue Apr 15 20:37:37 2008//
+/ReturnTypeVariable.java/1.1/Tue Apr 15 20:37:41 2008//
+/SimpleTypeConstraint.java/1.1/Tue Apr 15 20:37:40 2008//
+/TypeConstraintFactory.java/1.1/Tue Apr 15 20:37:39 2008//
+/TypeVariable.java/1.1/Tue Apr 15 20:37:42 2008//
+D/types////
+D/typesets////
