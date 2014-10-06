@@ -1,0 +1,17 @@
+/AbstractSpellDictionary.java/1.1/Tue Apr 15 20:45:14 2008//
+/DefaultPhoneticDistanceAlgorithm.java/1.1/Tue Apr 15 20:45:14 2008//
+/DefaultPhoneticHashProvider.java/1.1/Tue Apr 15 20:45:12 2008//
+/DefaultSpellChecker.java/1.1/Tue Apr 15 20:45:14 2008//
+/IPhoneticDistanceAlgorithm.java/1.1/Tue Apr 15 20:45:13 2008//
+/IPhoneticHashProvider.java/1.1/Tue Apr 15 20:45:16 2008//
+/ISpellCheckEngine.java/1.1/Tue Apr 15 20:45:16 2008//
+/ISpellCheckIterator.java/1.1/Tue Apr 15 20:45:13 2008//
+/ISpellChecker.java/1.1/Tue Apr 15 20:45:15 2008//
+/ISpellDictionary.java/1.1/Tue Apr 15 20:45:15 2008//
+/ISpellEvent.java/1.1/Tue Apr 15 20:45:13 2008//
+/ISpellEventListener.java/1.1/Tue Apr 15 20:45:16 2008//
+/LocaleSensitiveSpellDictionary.java/1.1/Tue Apr 15 20:45:17 2008//
+/PersistentSpellDictionary.java/1.1/Tue Apr 15 20:45:12 2008//
+/RankedWordProposal.java/1.1/Tue Apr 15 20:45:13 2008//
+/SpellEvent.java/1.1/Tue Apr 15 20:45:15 2008//
+/package.html/1.1/Tue Apr 15 20:45:12 2008//

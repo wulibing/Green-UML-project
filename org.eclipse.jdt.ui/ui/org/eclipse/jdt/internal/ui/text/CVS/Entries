@@ -1,0 +1,48 @@
+/AbstractInformationControl.java/1.1/Tue Apr 15 20:39:52 2008//
+/AbstractJavaScanner.java/1.1/Tue Apr 15 20:39:44 2008//
+/BufferedDocumentScanner.java/1.1/Tue Apr 15 20:39:49 2008//
+/ChangeHoverInformationControl.java/1.1/Tue Apr 15 20:39:45 2008//
+/CombinedWordRule.java/1.1/Tue Apr 15 20:39:47 2008//
+/CompositeReconcilingStrategy.java/1.1/Tue Apr 15 20:39:51 2008//
+/ContentAssistPreference.java/1.1/Tue Apr 15 20:39:52 2008//
+/DocumentCharacterIterator.java/1.1/Tue Apr 15 20:39:50 2008//
+/FastJavaPartitionScanner.java/1.1/Tue Apr 15 20:39:55 2008//
+/HTMLAnnotationHover.java/1.1/Tue Apr 15 20:39:48 2008//
+/ISourceVersionDependent.java/1.1/Tue Apr 15 20:39:47 2008//
+/ITypingRunListener.java/1.1/Tue Apr 15 20:39:46 2008//
+/JavaBreakIterator.java/1.1/Tue Apr 15 20:39:45 2008//
+/JavaChangeHover.java/1.1/Tue Apr 15 20:39:49 2008//
+/JavaCodeReader.java/1.1/Tue Apr 15 20:39:44 2008//
+/JavaColorManager.java/1.1/Tue Apr 15 20:39:54 2008//
+/JavaCommentScanner.java/1.1/Tue Apr 15 20:39:45 2008//
+/JavaCompositeReconcilingStrategy.java/1.1/Tue Apr 15 20:39:47 2008//
+/JavaElementProvider.java/1.1/Tue Apr 15 20:39:52 2008//
+/JavaHeuristicScanner.java/1.1/Tue Apr 15 20:39:43 2008//
+/JavaIndenter.java/1.1/Tue Apr 15 20:39:43 2008//
+/JavaOutlineInformationControl.java/1.1/Tue Apr 15 20:39:45 2008//
+/JavaPairMatcher.java/1.1/Tue Apr 15 20:39:49 2008//
+/JavaPartitionScanner.java/1.1/Tue Apr 15 20:39:53 2008//
+/JavaPresentationReconciler.java/1.1/Tue Apr 15 20:39:51 2008//
+/JavaReconciler.java/1.1/Tue Apr 15 20:39:54 2008//
+/JavaWhitespaceDetector.java/1.1/Tue Apr 15 20:39:51 2008//
+/JavaWordDetector.java/1.1/Tue Apr 15 20:39:43 2008//
+/JavaWordFinder.java/1.1/Tue Apr 15 20:39:48 2008//
+/JavaWordIterator.java/1.1/Tue Apr 15 20:39:53 2008//
+/LineBreakingReader.java/1.1/Tue Apr 15 20:39:50 2008//
+/PreferencesAdapter.java/1.1/Tue Apr 15 20:39:42 2008//
+/SequenceCharacterIterator.java/1.1/Tue Apr 15 20:39:54 2008//
+/SimpleJavaSourceViewerConfiguration.java/1.1/Tue Apr 15 20:39:53 2008//
+/SingleTokenJavaScanner.java/1.1/Tue Apr 15 20:39:49 2008//
+/SmartBackspaceManager.java/1.1/Tue Apr 15 20:39:53 2008//
+/Symbols.java/1.1/Tue Apr 15 20:39:48 2008//
+/TextMessages.java/1.1/Tue Apr 15 20:39:44 2008//
+/TextMessages.properties/1.1/Tue Apr 15 20:39:50 2008//
+/TypingRun.java/1.1/Tue Apr 15 20:39:46 2008//
+/TypingRunDetector.java/1.1/Tue Apr 15 20:39:46 2008//
+D/comment////
+D/correction////
+D/folding////
+D/java////
+D/javadoc////
+D/spelling////
+D/template////

@@ -1,0 +1,56 @@
+/CompatibilityTemplateStore.java/1.1/Tue Apr 15 20:48:07 2008//
+/EditorInputAdapterFactory.java/1.1/Tue Apr 15 20:48:14 2008//
+/IJavaHelpContextIds.java/1.1/Tue Apr 15 20:48:09 2008//
+/IJavaStatusConstants.java/1.1/Tue Apr 15 20:48:14 2008//
+/IJavaThemeConstants.java/1.1/Tue Apr 15 20:48:13 2008//
+/IResourceLocator.java/1.1/Tue Apr 15 20:48:15 2008//
+/IUIConstants.java/1.1/Tue Apr 15 20:48:09 2008//
+/InitializeAfterLoadJob.java/1.1/Tue Apr 15 20:48:07 2008//
+/InterfaceIndicatorLabelDecorator.java/1.1/Tue Apr 15 20:48:11 2008//
+/JavaElementAdapterFactory.java/1.1/Tue Apr 15 20:48:13 2008//
+/JavaElementContainmentAdapter.java/1.1/Tue Apr 15 20:48:10 2008//
+/JavaElementProperties.java/1.1/Tue Apr 15 20:48:10 2008//
+/JavaHierarchyPerspectiveFactory.java/1.1/Tue Apr 15 20:48:11 2008//
+/JavaPerspectiveFactory.java/1.1/Tue Apr 15 20:48:14 2008//
+/JavaPlugin.java/1.1/Tue Apr 15 20:48:09 2008//
+/JavaPluginImages.java/1.1/Tue Apr 15 20:48:12 2008//
+/JavaProjectAdapterFactory.java/1.1/Tue Apr 15 20:48:16 2008//
+/JavaTaskListAdapter.java/1.1/Tue Apr 15 20:48:13 2008//
+/JavaUIException.java/1.1/Tue Apr 15 20:48:10 2008//
+/JavaUIMessages.java/1.1/Tue Apr 15 20:48:15 2008//
+/JavaUIMessages.properties/1.1/Tue Apr 15 20:48:12 2008//
+/JavaUIPreferenceInitializer.java/1.1/Tue Apr 15 20:48:08 2008//
+/JavaUIStatus.java/1.1/Tue Apr 15 20:48:08 2008//
+/JavaWorkbenchAdapter.java/1.1/Tue Apr 15 20:48:08 2008//
+/LogicalPackageAdapterFactory.java/1.1/Tue Apr 15 20:48:07 2008//
+/MarkerAdapterFactory.java/1.1/Tue Apr 15 20:48:11 2008//
+/PersistableJavaElementFactory.java/1.1/Tue Apr 15 20:48:06 2008//
+/ResourceAdapterFactory.java/1.1/Tue Apr 15 20:48:12 2008//
+/ResourceLocator.java/1.1/Tue Apr 15 20:48:15 2008//
+/SharedImages.java/1.1/Tue Apr 15 20:48:14 2008//
+D/actions////
+D/browsing////
+D/callhierarchy////
+D/commands////
+D/compare////
+D/dialogs////
+D/dnd////
+D/filters////
+D/fix////
+D/infoviews////
+D/jarimport////
+D/jarpackager////
+D/javadocexport////
+D/javaeditor////
+D/model////
+D/navigator////
+D/packageview////
+D/preferences////
+D/propertiesfileeditor////
+D/search////
+D/text////
+D/typehierarchy////
+D/util////
+D/viewsupport////
+D/wizards////
+D/workingsets////

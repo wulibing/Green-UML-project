@@ -1,0 +1,30 @@
+/CodeGeneration.java/1.1/Tue Apr 15 20:50:42 2008//
+/CodeStyleConfiguration.java/1.1/Tue Apr 15 20:50:41 2008//
+/IContextMenuConstants.java/1.1/Tue Apr 15 20:50:41 2008//
+/IJavaElementSearchConstants.java/1.1/Tue Apr 15 20:50:47 2008//
+/IPackagesViewPart.java/1.1/Tue Apr 15 20:50:39 2008//
+/ISharedImages.java/1.1/Tue Apr 15 20:50:40 2008//
+/ITypeHierarchyViewPart.java/1.1/Tue Apr 15 20:50:39 2008//
+/IWorkingCopyManager.java/1.1/Tue Apr 15 20:50:41 2008//
+/IWorkingCopyManagerExtension.java/1.1/Tue Apr 15 20:50:48 2008//
+/IWorkingCopyProvider.java/1.1/Tue Apr 15 20:50:46 2008//
+/JavaElementComparator.java/1.1/Tue Apr 15 20:50:48 2008//
+/JavaElementContentProvider.java/1.1/Tue Apr 15 20:50:46 2008//
+/JavaElementImageDescriptor.java/1.1/Tue Apr 15 20:50:43 2008//
+/JavaElementLabelProvider.java/1.1/Tue Apr 15 20:50:38 2008//
+/JavaElementLabels.java/1.1/Tue Apr 15 20:50:45 2008//
+/JavaElementSorter.java/1.1/Tue Apr 15 20:50:47 2008//
+/JavaUI.java/1.1/Tue Apr 15 20:50:42 2008//
+/JavadocContentAccess.java/1.1/Tue Apr 15 20:50:39 2008//
+/OverrideIndicatorLabelDecorator.java/1.1/Tue Apr 15 20:50:43 2008//
+/PreferenceConstants.java/1.1/Tue Apr 15 20:50:45 2008//
+/ProblemsLabelDecorator.java/1.1/Tue Apr 15 20:50:48 2008//
+/StandardJavaElementContentProvider.java/1.1/Tue Apr 15 20:50:44 2008//
+D/actions////
+D/dialogs////
+D/jarpackager////
+/package.html/1.1/Tue Apr 15 20:50:47 2008//
+D/refactoring////
+D/search////
+D/text////
+D/wizards////

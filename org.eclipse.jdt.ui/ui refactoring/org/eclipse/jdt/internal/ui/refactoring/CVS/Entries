@@ -1,0 +1,61 @@
+/ChangeExceptionHandler.java/1.1/Tue Apr 15 20:43:29 2008//
+/ChangeExceptionsControl.java/1.1/Tue Apr 15 20:43:15 2008//
+/ChangeParametersControl.java/1.1/Tue Apr 15 20:43:21 2008//
+/ChangeSignatureWizard.java/1.1/Tue Apr 15 20:43:19 2008//
+/ChangeTypeContentProvider.java/1.1/Tue Apr 15 20:43:15 2008//
+/ChangeTypeWizard.java/1.1/Tue Apr 15 20:43:16 2008//
+/ComboSelectionDialog.java/1.1/Tue Apr 15 20:43:26 2008//
+/CompilationUnitChangeNode.java/1.1/Tue Apr 15 20:43:23 2008//
+/ConvertAnonymousToNestedWizard.java/1.1/Tue Apr 15 20:43:19 2008//
+/CreateTextFileChangePreviewViewer.java/1.1/Tue Apr 15 20:43:18 2008//
+/DelegateUIHelper.java/1.1/Tue Apr 15 20:43:21 2008//
+/ExtractConstantWizard.java/1.1/Tue Apr 15 20:43:28 2008//
+/ExtractInterfaceWizard.java/1.1/Tue Apr 15 20:43:24 2008//
+/ExtractSupertypeMemberPage.java/1.1/Tue Apr 15 20:43:24 2008//
+/ExtractSupertypeMethodPage.java/1.1/Tue Apr 15 20:43:24 2008//
+/ExtractSupertypeWizard.java/1.1/Tue Apr 15 20:43:22 2008//
+/ExtractTempWizard.java/1.1/Tue Apr 15 20:43:16 2008//
+/IExceptionListChangeListener.java/1.1/Tue Apr 15 20:43:18 2008//
+/IParameterListChangeListener.java/1.1/Tue Apr 15 20:43:27 2008//
+/IScheduledRefactoring.java/1.1/Tue Apr 15 20:43:22 2008//
+/IVisibilityChangeListener.java/1.1/Tue Apr 15 20:43:27 2008//
+/InferTypeArgumentsWizard.java/1.1/Tue Apr 15 20:43:30 2008//
+/InlineConstantWizard.java/1.1/Tue Apr 15 20:43:20 2008//
+/InlineTempWizard.java/1.1/Tue Apr 15 20:43:27 2008//
+/IntroduceFactoryInputPage.java/1.1/Tue Apr 15 20:43:14 2008//
+/IntroduceFactoryWizard.java/1.1/Tue Apr 15 20:43:21 2008//
+/IntroduceIndirectionInputPage.java/1.1/Tue Apr 15 20:43:25 2008//
+/IntroduceIndirectionWizard.java/1.1/Tue Apr 15 20:43:30 2008//
+/IntroduceParameterObjectWizard.java/1.1/Tue Apr 15 20:43:23 2008//
+/IntroduceParameterWizard.java/1.1/Tue Apr 15 20:43:15 2008//
+/JavaStatusContextViewer.java/1.1/Tue Apr 15 20:43:16 2008//
+/MessageWizardPage.java/1.1/Tue Apr 15 20:43:31 2008//
+/MoveInnerToTopWizard.java/1.1/Tue Apr 15 20:43:18 2008//
+/MoveInstanceMethodWizard.java/1.1/Tue Apr 15 20:43:31 2008//
+/MoveMembersWizard.java/1.1/Tue Apr 15 20:43:25 2008//
+/ParameterEditDialog.java/1.1/Tue Apr 15 20:43:26 2008//
+/PromoteTempWizard.java/1.1/Tue Apr 15 20:43:20 2008//
+/PullPushCheckboxTableViewer.java/1.1/Tue Apr 15 20:43:29 2008//
+/PullUpMemberPage.java/1.1/Tue Apr 15 20:43:28 2008//
+/PullUpMethodPage.java/1.1/Tue Apr 15 20:43:28 2008//
+/PullUpWizard.java/1.1/Tue Apr 15 20:43:19 2008//
+/PushDownWizard.java/1.1/Tue Apr 15 20:43:23 2008//
+/QualifiedNameComponent.java/1.1/Tue Apr 15 20:43:29 2008//
+/RefactoringAdapterFactory.java/1.1/Tue Apr 15 20:43:17 2008//
+/RefactoringExecutionHelper.java/1.1/Tue Apr 15 20:43:17 2008//
+/RefactoringMessages.java/1.1/Tue Apr 15 20:43:23 2008//
+/RefactoringSaveHelper.java/1.1/Tue Apr 15 20:43:25 2008//
+/RefactoringSavePreferences.java/1.1/Tue Apr 15 20:43:22 2008//
+/TextInputWizardPage.java/1.1/Tue Apr 15 20:43:14 2008//
+/UseSupertypeWizard.java/1.1/Tue Apr 15 20:43:30 2008//
+/UserInterfaceManager.java/1.1/Tue Apr 15 20:43:17 2008//
+/UserInterfaceStarter.java/1.1/Tue Apr 15 20:43:14 2008//
+/VisibilityControlUtil.java/1.1/Tue Apr 15 20:43:20 2008//
+D/actions////
+D/binary////
+D/code////
+D/contentassist////
+D/nls////
+/refactoringui.properties/1.1/Tue Apr 15 20:43:26 2008//
+D/reorg////
+D/sef////

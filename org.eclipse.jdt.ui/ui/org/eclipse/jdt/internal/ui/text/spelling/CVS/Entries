@@ -1,0 +1,23 @@
+/AddWordProposal.java/1.1/Tue Apr 15 20:48:23 2008//
+/ChangeCaseProposal.java/1.1/Tue Apr 15 20:48:17 2008//
+/CoreSpellingProblem.java/1.1/Tue Apr 15 20:48:17 2008//
+/DefaultSpellingEngine.java/1.1/Tue Apr 15 20:48:18 2008//
+/DisableSpellCheckingProposal.java/1.1/Tue Apr 15 20:48:20 2008//
+/HtmlTagDictionary.java/1.1/Tue Apr 15 20:48:22 2008//
+/JavaDocTagDictionary.java/1.1/Tue Apr 15 20:48:21 2008//
+/JavaSpellingEngine.java/1.1/Tue Apr 15 20:48:23 2008//
+/JavaSpellingProblem.java/1.1/Tue Apr 15 20:48:16 2008//
+/JavaSpellingReconcileStrategy.java/1.1/Tue Apr 15 20:48:18 2008//
+/PropertiesFileSpellCheckIterator.java/1.1/Tue Apr 15 20:48:22 2008//
+/PropertiesFileSpellingEngine.java/1.1/Tue Apr 15 20:48:21 2008//
+/SpellCheckEngine.java/1.1/Tue Apr 15 20:48:17 2008//
+/SpellCheckIterator.java/1.1/Tue Apr 15 20:48:20 2008//
+/SpellingEngine.java/1.1/Tue Apr 15 20:48:19 2008//
+/TaskTagDictionary.java/1.1/Tue Apr 15 20:48:16 2008//
+/TextSpellingEngine.java/1.1/Tue Apr 15 20:48:21 2008//
+/WordCompletionProposalComputer.java/1.1/Tue Apr 15 20:48:22 2008//
+/WordCorrectionProposal.java/1.1/Tue Apr 15 20:48:18 2008//
+/WordIgnoreProposal.java/1.1/Tue Apr 15 20:48:19 2008//
+/WordQuickFixProcessor.java/1.1/Tue Apr 15 20:48:19 2008//
+D/engine////
+/package.html/1.1/Tue Apr 15 20:48:20 2008//
