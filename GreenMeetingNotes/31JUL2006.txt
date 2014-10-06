@@ -1,0 +1,22 @@
+Meeting on July 31, 2006
+
+	Present: Brian McSkimming, Gene Wang, Adrienne & Carl
+	
+Accomplishments:
+	Green has been advanced without any obvious slow down to the point of last remaining 
+	updates within the CVS repository.
+	
+Goals necessary for the release of RC3:
+	Incremental Explorer needs to be removed from the diagram editor itself.  -- DONE bmm 7/31
+	Green icon needs to be incorporated into a file icon. (As per Adrienne's request...) -- DONE bmm 8/1
+	Removal of String class from diagram is "decrementally deleted", and needs to be properly 
+	  removed in one fell swoop.
+    Exception errors when dealing with static inner classes (listed in ErrorWithLRStructPackages)
+    
+New developments noted through Carl's laptop of misfortune:
+
+*** This should also be fixed for the release of RC3
+
+	No more handles error caused in SWT -- Could be a problem due to the Dispose() method not 
+	being called properly at the close and opening of editor windows (this is in 
+	reference to a bug log on eclipse.org)

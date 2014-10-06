@@ -1,0 +1,68 @@
+3.0.0v20070101 Release plan
+
+Issue: Enumerands are singly-instantiated anonymous inner classes.
+Because there is no explicit "new" or "extends", there are no relationship lines showing in the diagram.
+This is a problem with the semantics of the relationships, not with Green.
+
+nogo?	- remove the Toolbar (all of the functionality is available in standard ways)
+		  [May not be do-able: functionality appears to need to be tied into either a 
+		   context menu or a toolbar.  Global keyboard shortcuts appear to need to be 
+		   tied to toolbar items.]  --> gone??
+
+Done[Oct10.06]Gene - renamed extension to .grn, implemented backwards
+			compatibility with .dia's.
+
+TODO Refactoring issue with file format (which feeds into file extension change).
+    
+TODO Update site	- look into version numbering rules
+    
+TODO Generic collections feature request
+    
+TODO XMI export?
+TODO XMI import?  Discard/ignore what we don't support...import->export may well lose info...
+
+TODO Incremental exploration along a single relationship
+
+TODO Code design documentation
+
+FEATURE: It should maybe be an option (under preferences) so that when removing a type T,
+    remove relationships which have T as a target (probably prior to deletion of T).
+
+TODO		    # add to XML file the preference for putting into File->New... menu
+		      (Wizards/shortcut)
+TODO Check how "last open file" is tracked - Brian has his doubts about whether this done
+     correctly.
+     
+	 FILTERS:
+TODO	Fix
+TODO	and put into preferences (public,private,...,static)
+
+TODO Multiple-semantics relationships should be packageable in separate jar files
+     without multiple buttons appearing.
+     
+TODO Multiple-semantics relationships should have "auto-hover" for 
+              semantics choices.
+
+BUG: Refactoring type name from package explorer / code, but not from diagram, causes relationship
+     arcs to disappear.
+     Thought: the Green model's object representing the type is not "refactored", but rather a new 
+     model element is created for the type under its new name, but the relationship model elements refer
+     to the old type element.
+     This may get pushed to 3.0, in which case we need to document it in the Help documents.
+     Tell users to refactor from within diagram.
+     We also need to tell users that existing diagram files are *NOT* subject to refactoring,
+     which may cause diagrams to fail to open after refactoring (esp. refactoring the project
+     name).
+**** Dealing with this issue is pushed to 3.0.
+
+BUG: Deletion of ALL existing bendpoints after refactoring.
+     This is perhaps just the way things work - but if we can somehow update the
+     source and target types of a relationship, this could work.
+**** Dealing with this issue is pushed to 3.0.    
+         
+BUG: '<' and '>' in notes cause problems.
+
+BUG: Printing fails to display the Class, Interface, Enumerator etc. icons in the corners of class boxes. 
+
+TODO Change workbench to use IworkbenchCommandSupport and/or IworkbenchContextSupport.  Or other 
+	 non- deprecated classes

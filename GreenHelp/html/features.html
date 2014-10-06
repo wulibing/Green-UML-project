@@ -1,0 +1,178 @@
+<head>
+<link rel="stylesheet" href="default.css"/>
+<meta http-equiv="Content-type" content="text/xhtml; charset=ISO-8859-1"/>
+<title>Features</title>
+</head>
+
+Items with an asterisk (*) are new.<ul>
+
+<b>Behavior</b><li><a href='#Draw a note'>Draw a note</a></li>
+<li><a href='#Draw a relationship'>Draw a relationship</a></li>
+<li><a href='#Draw UML boxes to create a class'>Draw UML boxes to create a class</a></li>
+<li><a href='#Generate a UML diagram from existing code'>Generate a UML diagram from existing code</a></li>
+<br><b>Java Tools</b><li><a href='#Add an element to a type'>Add an element to a type</a></li>
+<li><a href='#Delete'>Delete</a></li>
+
+<li><a href='#Refactor a method signature'>Refactor a method signature</a></li>
+<li><a href='#Refactor: move'>Refactor: move</a></li>
+<li><a href='#Refactor: rename'>Refactor: rename</a></li>
+<br><b>Display</b><li><a href='#Alter global relationship visibility'>Alter global relationship visibility</a></li>
+<li><a href='#*Collapse a Class Box'>*Collapse a Class Box</a></li>
+<li><a href='#*Manhattan routing'>*Manhattan routing</a></li>
+<li><a href='#Remove a type from the diagram'>Remove a type from the diagram</a></li>
+<li><a href='#*Show subtype names on relationship arcs'>*Show subtype names on relationship arcs</a></li>
+
+<li><a href='#Toggle method visibility'>Toggle method visibility</a></li>
+<li><a href='#Toggle type name'>Toggle type name</a></li>
+<br><b>Getting Around</b><li><a href='#*Filters'>*Filters</a></li>
+<li><a href='#Incrementally explore'>Incrementally explore</a></li>
+<li><a href='#Open a call hierarchy'>Open a call hierarchy</a></li>
+<li><a href='#Open a Java element'>Open a Java element</a></li>
+<li><a href='#Open a type hierarchy'>Open a type hierarchy</a></li>
+<br><b>Miscellaneous</b><li><a href='#*Invisible grid'>*Invisible grid</a></li>
+
+<li><a href='#Print a diagram'>Print a diagram</a></li>
+<li><a href='#Refresh the editor'>Refresh the editor</a></li>
+<li><a href='#Save a diagram as a JPEG'>Save a diagram as a JPEG</a></li>
+<li><a href='#*Tooltips'>*Tooltips</a></li>
+<li><a href='#Undo/Redo'>Undo/Redo</a></li>
+<li><a href='#Use auto-resize for a type'>Use auto-resize for a type</a></li>
+<br></ul><hr><a name='*Collapse a Class Box'><b>*Collapse a Class Box</b></a> (Context Menu)<br><br>
+To perform this function, select a type and press 
+the <i>c</i> key. The size of the box will instantly be set to a size 
+specified in the preferences system.
+
+<hr><a name='*Filters'><b>*Filters</b></a> (Context Menu)<br><br>
+Filters can be added to prevent certain things 
+from being displayed in the diagram. Types, fields, and methods can 
+be filtered by their visibility and name. Note that all names are 
+fully-qualified. Filters apply to all editors simultaneously.
+<hr><a name='*Invisible grid'><b>*Invisible grid</b></a> (Preferences System)<br><br>
+The invisible grid causes UML boxes to snap to the 
+editor at a certain number of pixels. You can change this value in the 
+preferences system. Setting the value to 1 effectively disables this 
+feature.
+<hr><a name='*Manhattan routing'><b>*Manhattan routing</b></a> (Preferences System)<br><br>
+To enable Manhattan routing, use the preferences 
+system. Manhattan routing takes much of the drudgery out of adding 
+bendpoints to a diagram, but limits the control you have over the 
+drawing of arcs.
+<hr><a name='*Show subtype names on relationship arcs'><b>*Show subtype names on relationship arcs</b></a> (Preferences System)<br><br>
+
+Relationship subtype names are automatically places 
+on relationship arcs, if subtypes exist. This can be disabled in the 
+preferences system.
+<hr><a name='*Tooltips'><b>*Tooltips</b></a> (Preferences System)<br><br>
+While hovering over a member (class, field, or 
+method), a tooltip will be displayed, offering you either a list of 
+quick fixes or a javadoc. The javadoc will only be offered if it exists 
+and there are no suggestions for a quick fix.
+<hr><a name='Add an element to a type'><b>Add an element to a type</b></a> (Context Menu)<br><br>
+You can use the dialog box to select modifiers for 
+the field or method being added.<br><br>Note: This action cannot be 
+undone using the undo feature.
+<hr><a name='Alter global relationship visibility'><b>Alter global relationship visibility</b></a> (Context Menu)<br><br>
+This feature will unconditionally hide or show all 
+relationships of the given kind. If you activate <i>show all 
+relationships</i>, relationships that are globally hidden will not be 
+shown.
+
+<hr><a name='Delete'><b>Delete</b></a> (Integrated)<br><br>
+To delete something from the editor (and code), 
+use the <i>Delete</i> key. Be careful when using this feature; you are 
+capable of removing large sections of code. This feature can be undone 
+if performed on a note, but cannot be undone for anything else. You 
+cannot delete binary types loaded into the diagram; if you wish to 
+remove these, use the <i>remove from diagram</i> action on the type.
+<hr><a name='Draw UML boxes to create a class'><b>Draw UML boxes to create a class</b></a> (Palette)<br><br>
+When a UML box is drawn, the respective class or 
+interface is automatically created in Eclipse. The standard <i>New Java 
+Class</i> dialog appears, allowing you to fill in the class name, 
+superclasses, implemented interfaces, and so forth. After the class is 
+generated, the UML box is displayed at the location where you dragged 
+it.
+
+<hr><a name='Draw a note'><b>Draw a note</b></a> (Palette)<br><br>
+A note can be drawn directly in the editor, and 
+its contents can be changed by double-clicking on it. Notes are saved 
+along with the rest of the contents of the editor. They are selectable 
+and resizable. Their contents are stored only in the diagram file and 
+are not referenced anywhere in the Java code.
+<hr><a name='Draw a relationship'><b>Draw a relationship</b></a> (Palette)<br><br>
+After creating UML boxes. Select one of the 
+relationship tools. Then, select the source and destination UML boxes to 
+create a relationship between them. Green will automatically generate 
+the necessary code to create the selected relationship.
+<hr><a name='Generate a UML diagram from existing code'><b>Generate a UML diagram from existing code</b></a> (Package Explorer Context Menu)<br><br>
+Simply right-click a java file, package, or 
+project and then select <i>Open in UML Diagram</i> to create a diagram 
+containing its contents. Green automatically draws in any relationships 
+that are recognized in your existing code.
+
+<hr><a name='Incrementally explore'><b>Incrementally explore</b></a> (Context Menu)<br><br>
+Activating this feature performs a complex 
+operation. First, it looks for all relationships that stem from this 
+type (i.e. this is the source of the relationship, not the target). It 
+then proceeds to look at the targets of those relationships and load 
+them into the editor one by one. The relationships between the explored 
+class and its targets are then drawn into the diagram.
+<hr><a name='Open a Java element'><b>Open a Java element</b></a> (Context Menu)<br><br>
+To open an element, right-click on it in the 
+package explorer and select <i>Open in UML class diagram</i>.
+<hr><a name='Open a call hierarchy'><b>Open a call hierarchy</b></a> (Context Menu)<br><br>
+This action will open the view that shows the 
+methods that call the selected method.
+
+<hr><a name='Open a type hierarchy'><b>Open a type hierarchy</b></a> (Context Menu)<br><br>
+This action will open the view that shows the 
+subclasses of a type.
+<hr><a name='Print a diagram'><b>Print a diagram</b></a> (Integrated)<br><br>
+Simply go to Print in the file menu.
+<hr><a name='Refactor a method signature'><b>Refactor a method signature</b></a> (Context Menu)<br><br>
+This feature allows you to change the name, 
+modifier, and parameters of a method and will update all calls to the 
+method.<br><br>Note: This action cannot be undone using the undo 
+feature.
+<hr><a name='Refactor: move'><b>Refactor: move</b></a> (Context Menu)<br><br>
+
+This feature will move a field, method, or type 
+from one Java file to another. All references to the field, method, or 
+type will be updated.<br><br>Note: This action cannot be undone using 
+the undo feature. If you move a type with the same name as the java file 
+it is in, everything inside that type will be moved.
+<hr><a name='Refactor: rename'><b>Refactor: rename</b></a> (Context Menu)<br><br>
+This feature renames a field, method, or type. All 
+references to the field, method, or type will be updated.<br><br>Note: 
+This action cannot be undone using the undo feature. If you rename a 
+type with the same name as the java file it is in, the java file will be 
+renamed as well.
+<hr><a name='Refresh the editor'><b>Refresh the editor</b></a> (Integrated)<br><br>
+To refresh the editor, press the <i>F5</i> key.
+<hr><a name='Remove a type from the diagram'><b>Remove a type from the diagram</b></a> (Context Menu)<br><br>
+
+If you want to remove a type from the diagram, 
+select it and press the <i>Backspace</i> key. Alternatively, you can use 
+the context menu to remove a type from the diagram.<br><br>Note: 
+Removing a type from the diagram does not remove it from your file 
+system. To remove a file from your project, use the delete function.
+<hr><a name='Save a diagram as a JPEG'><b>Save a diagram as a JPEG</b></a> (Integrated)<br><br>
+Simply go to Save As in the file menu and change 
+the save format to JPEG.
+<hr><a name='Toggle method visibility'><b>Toggle method visibility</b></a> (Preferences System)<br><br>
+You can hide all non-public methods. This could be 
+useful if you were trying to view the methods that are accessible from 
+all types.
+<hr><a name='Toggle type name'><b>Toggle type name</b></a> (Preferences System)<br><br>
+
+You can display either simple names or 
+fully-qualified names in the diagram.
+<hr><a name='Undo/Redo'><b>Undo/Redo</b></a> (Integrated)<br><br>
+Simply access these actions from the edit menu. 
+The shortcut keys also work.
+<hr><a name='Use auto-resize for a type'><b>Use auto-resize for a type</b></a> (Context Menu)<br><br>
+When you resize a type box, the size becomes fixed 
+at that size. Activating this feature will cause the box to 
+automatically resize to show its entire contents.
+
+</body>
+</html>

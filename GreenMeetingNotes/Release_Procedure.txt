@@ -1,0 +1,55 @@
+Release Procedures for Green
+
+Created by: zgwang
+Date: June 5th, 2007 (6/5/07)
+
+Last Modified: zgwang, 6/5/07
+
+
+*In Eclipse
+  - Go to File -> Export...
+  - Under "Select an export destination...", choose
+    "Plug-in Development" -> "Deployable plug-ins and fragments"
+  - Click Next
+  - Check the box next to all Plug-ins for release.  i.e.
+      edu.buffalo.cse.green
+      edu.buffalo.cse.green.help
+      edu.buffalo.cse.green.relationship.association
+      edu.buffalo.cse.green.relationship.composition
+      edu.buffalo.cse.green.relationship.dependency
+      edu.buffalo.cse.green.relationship.generalization
+      edu.buffalo.cse.green.relationship.realization
+    Note: at this point, we do not release edu.buffalo.cse.green.debug
+    Note: the end of each plug-in will include additional version numbers
+  - Choose a directory under the Directory tab
+  - Under Options, select "Include source code" if it it source version
+    Otherwise, leave all three checkboxes blank
+    Note: do this export twice, once including the source, once without it
+  - Click Finish
+
+  - Go to File -> Export... again
+  - Under "Select an export destination...", choose
+    "General" -> "File System"
+  - Click Next
+  - In the Green project, select the entire "icons" directory
+  - For "To directory:" navigate to the directory you used to export
+    the Plug-ins, then to /plugins/edu.buffalo.cse.green
+  - Under Options, do not check "Overwrite existing files..." and
+    select the "Create only selected directories" radio button.  These
+    should be the default values anyway.
+  - Click Finish
+    Note: icons needed to be exported manually because Eclipse does not 
+          consider them to be a part of the plugin code
+
+*Zip up the directory that was created. (Via WinZip, WinRAR, etc.)
+
+*After logging in to SourceForge
+  - Go to Admin -> File Releases
+  - Click [Add Release] for the package named "green"
+  - Name the release and click on "Create release"
+  - Follow the steps provided by SourceForge
+    Note: For Step 2, you will need an independent FTP client, e.g.
+          FileZilla to upload the files.
+    Note: For Step 3, mark the files "Platform-Independent" for Processor
+          and mark "Source .zip" and ".zip" for File Type accordingly.
+          Be sure to hit "Update/Refresh" for each.

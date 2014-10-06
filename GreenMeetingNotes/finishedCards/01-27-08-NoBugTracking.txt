@@ -1,0 +1,16 @@
+Title: we Have No Electronic Bug Tracking					
+SF Number:
+Date Submitted: 12-01-07			Completed: 01-27-08
+Delegated to: Josh, Brian			Forecast: Short
+
+Description:
+While we had a lovely system of physical cards, it was deemed that we had no idea where
+they hid them when they moved our stuff, so an electronic card system was needed.  Not that
+We'd have anything to put there at the moment.
+
+Possible Solutions:
+Bugzilla, .txt files in CVS, other free bug trackers
+
+Work to Date:
+Brian determines that the higher ups are indifferent to our plight, bugzilla is out. 01-22-08
+Josh builds a .txt set up in CVS.  Effort is minimal. 01-27-08

@@ -1,0 +1,14 @@
+2.5.0v20070605 Bug notes
+
+Dependency bugs 
+  - when creating a dependency from a class with no methods/constructors
+    at all, green correctly notifies user, but then incorrectly brings up
+  	dialog to select a method
+  - when creating a dependency from a class with methods but no constructor,
+    then the generation doesn't work at all (green appears to hang)
+    
+Method selection dialog window is ugly (Gene)
+
+Method selection dialog window needs a title in its OWN window (not the 
+main Eclipse window).
+

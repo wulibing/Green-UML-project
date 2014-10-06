@@ -1,0 +1,30 @@
+Meeting on July 17, 2006
+
+	Present: Brian McSkimming, Adrienne & Carl
+	
+Accomplishments:
+	RC3 branch has been advanced to include the commits completed on 3/30/06. This includes:
+		Enum Support
+		New Relationship Visitors
+		Filter Fix
+		Resize Fix
+		999999 Bug Fix
+		Quick Fix
+		
+A fair amount of discussion regarding the following design thoughts:
+	Open New Diagram should be renamed "Create New" Diagram
+	Would it be possible to nest Create New Diagram within the "New" context menu
+	Green Icons need to be revamped, possibilities include:
+		the green "g" within a file, similiar to the "J" within a java file
+		the green "g" within a mini-uml box, if it would be noticible as such
+		a file, similiar to the java icon, only instead of a "j" within it, the entire
+		  file could be colored green
+	Possible change of file extension name from ".dia" to either ".green" or ".uml"
+	
+It was noticed that in order to properly use Incremental Exploration of relationships,
+that the java librairies need to be properly attached within Eclipse.  (NOTE: This was
+supposedly fixed (read: ignored) in a later update of green, according to commit comments)
+
+Goals:
+	Continue advancement of green through time, in an attempt to bring it to the point 
+	when Blake left, only without the memory leak.

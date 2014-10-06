@@ -1,0 +1,22 @@
+/ActivateSelectionToolCommand.java/1.4/Mon Apr  3 23:49:48 2006/-kk/
+/AddFieldCommand.java/1.5/Thu Jul 12 17:16:03 2007/-kk/
+/AddJavaElementCommand.java/1.14/Thu Jul 12 18:02:27 2007/-kk/
+/AddMethodCommand.java/1.5/Thu Jul 12 17:16:05 2007/-kk/
+/AlterRelationshipVisibilityCommand.java/1.7/Thu Jul 12 17:16:05 2007/-kk/
+/CreateBendpointCommand.java/1.11/Thu Jul 12 17:16:04 2007/-kk/
+/CreateCommand.java/1.9/Thu Jul 12 17:16:04 2007/-kk/
+/DeleteBendpointCommand.java/1.7/Thu Jul 12 17:16:02 2007/-kk/
+/DeleteCommand.java/1.7/Thu Jul 12 17:16:02 2007//
+/DeleteFieldCommand.java/1.7/Thu Jul 12 17:16:04 2007//
+/DeleteMethodCommand.java/1.7/Thu Jul 12 17:16:04 2007//
+/DeleteNoteCommand.java/1.4/Wed Oct 12 19:59:53 2005/-kk/
+/DeleteTypeCommand.java/1.10/Thu Jul 12 17:16:01 2007//
+/EditNoteCommand.java/1.4/Thu Jul 12 17:16:02 2007/-kk/
+/HideRelationshipCommand.java/1.5/Thu Jul 12 17:16:03 2007/-kk/
+/HideTypeCommand.java/1.4/Thu Jul 12 17:16:03 2007/-kk/
+/IncrementalExploreCommand.java/1.10/Thu Jul 12 17:16:01 2007/-kk/
+/MoveBendpointCommand.java/1.6/Thu Jul 12 17:16:05 2007/-kk/
+/RemoveTypeCommand.java/1.7/Thu Jul 12 17:16:02 2007/-kk/
+/SetConstraintCommand.java/1.8/Thu Jul 12 17:16:03 2007/-kk/
+/ShowRelationshipCommand.java/1.4/Thu Jul 12 17:16:01 2007/-kk/
+D/undoable////

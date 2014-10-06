@@ -1,0 +1,436 @@
+\documentclass{sig-alt-release}
+\usepackage{blake}
+\usepackage{green-commands}
+
+\begin{document}
+\title{\myTitle}
+\author{
+  Blake Martin, Carl Alphonce, Adrienne Decker \\
+  Department of Computer Science \& Engineering \\
+  University at Buffalo, The State University of New York \\ 
+  Buffalo, NY 14260-2000 \\ 
+}
+
+\maketitle
+
+\begin{abstract}
+  In the development and use of tools for sound pedagogy, we've encountered a
+  dilemma in our educational process: we need to introduce our students tools
+  in order to enhance productivity. Ideally, tools suited for teaching a CS0/CS1
+  course have several characteristics, such as the ability to grow with the
+  students and their needs. The interface and toolkits should not overwhelm the
+  students. Furthermore, they need to be customizable for use in different
+  environments, perhaps for meeting the needs of different curricula.
+    
+  To this end, professional tools are often cost-prohibitive and too complex. We
+  therefore look to simpler tools, each one specializing in a certain set of
+  functionality. Many pedagogically-aimed tools specialize in a subset of
+  educational needs.
+
+  One problem with these tools and environments is that students often outgrow
+  them, necessitating movement to another tool. This can carry some benefits,
+  such as students understanding both the benefits and the limitations of simple
+  tools. For example, our second semester students recently were unsure of how
+  to create a simple text file in \eclipse. This task would have been trivial
+  for the students if they were using a simpler editor, such as \emacs.
+\end{abstract}
+
+\section{Introduction}
+  Educators needs tools and environments that can grow with their students. A
+  common approach to taking pedagogical steps involves using a staged approach,
+  where students initially focus on a small set of core functionality that grows
+  larger and more powerful over time. 
+
+  Some toolmakers have made a move to address the problem of switching tools
+  during the education process by using ``staged'' or ``leveled'' tools, like
+  DrScheme and \drjava. These tools support multiple language levels, which
+  allow students to migrate from one level of language support to another as
+  their understanding deepens.
+
+  Some staged tools enhance pedagogy by making learning more entertaining.
+  \munchers\ is an example of a game that teaches mathematics using a staged
+  approach, where game difficulty increases as the player progresses. Another
+  example is the \logo\ language, where novice users can experiment with simple
+  commands that enact graphical results. The language is part procedural and
+  part functional; advanced users can define their own routines. New doors open
+  as fundamental concepts are learned. Note that while the roots and intentions
+  of the two programs are very different, they both exploit staging to add depth
+  to pedagogy without overwhelming students in the initial stages.
+
+  In order to acclimate our students to real-world software development tools,
+  we have switched to using Eclipse. Eclipse allows additional functionality
+  by using of extensions in a manner similar to Emacs. Additionally, Eclipse's
+  tools are much more mature than those of Emacs. Many of the features offered
+  greatly reduce the amount of time and effort required to develop robust
+  software. By offering a limited set of custom plug-ins at any given time, we
+  can stage our pedagogy.
+
+  A large concern with exposing students to object-oriented programming is
+  making a clear distinction between classes and objects. To this end, tools
+  like \violet\ and \green\ are only useful in that they allow quick and easy
+  creation of diagrams. \drscheme\ and DrJava are more useful in drawing the
+  connection, allowing the user to play around with object values at a command
+  prompt. \bluej\ stands alone in making this particular distinction; it creates
+  instances of objects from classes in a graphical manner. The distinction is
+  literally visible to the student.
+
+  Our contention is that in order to support sound pedagogy in the computer
+  science curriculum, a greater focus needs to be put on tools which are easy
+  for instructors to customize on their own. By dynamic, we mean that they are
+  highly configurable after their initial design or compilation. They need to
+  have methods by which you can easily adapt the tool to meet situation-specific
+  criteria, such as age, mathematical skill, or stages in a progression.
+
+\section{Pedagogy}
+  We looked at several varieties of tools. Among them are general programming
+  tools, IDEs, mathematical learning environments, and UML tools. A common theme
+  among these tools is that they can grow to some extent with their users. The
+  means by which they change varies; it can be as simple as increasing
+  difficulty or as involved as learning a new set of tools. The approach varies
+  and can be tailored to a student's level of understanding, the desires of the
+  course instructor, or both.
+
+  \subsection{General Programming Tools}
+    \alice\ is a project developed at Carnegie Mellon. It allows users to build
+    virtual worlds consisting of interactive 3D graphical objects. The language
+    of Alice is procedural in nature. Objects in Alice are capable of performing
+    behaviors which are relative to other objects, making the language both
+    simple and powerful. For example, an object can move from its current
+    location to a point 2 meters from an object, then move in a circular path
+    around that object, maintaining a distance of 2 meters.
+  
+    Alice is an open source event-driven system aimed at high school and
+    beginning college students. It uses a drag-and-drop interface to allow the
+    user to place objects and write code. Alice hides programming syntax by
+    allowing the user to specify their program in a plain English and gets
+    around the issue of mathematical calculation by using relative values (e.g.
+    a sprite can travel to a point that's a certain distance from some object.)
+    Common programming constructs, such as loops, are implemented as blocks of
+    instructions, much like the blocks of code used in programming languages.
+    Alice does a very good job at abstracting such concepts.
+    
+    Alice is unique in its exposure of object oriented concepts combined with a
+    completely encapsulated language syntax. While Alice is written in Java (as
+    are all the other tools discussed), code in Alice is written using a
+    drag-and-drop interface. Syntax errors are impossible to create. This allows
+    users to focus on learning programming concepts without the concern of
+    syntax errors. Unfortunately, the event-based behaviors provide little (if
+    any) logical connection to the underlying programming constructs that make
+    them possible.
+    
+    A significant advantage of Alice is that it allows a much younger audience
+    to learn basic programming concepts and constructs. Since syntax and the
+    details of computations are hidden, students don't have to deal with the
+    frustration of adhering to a grammar or using a pencil and paper to write
+    out mathematical calculations (for example, you can move to a point 2 meters
+    in front of an object).
+    
+    However, certain pedagogical ramifications of using such an environment can
+    make Alice undesirable for use in CS1 education. A graphical IDE, the
+    \mindstorms\ drag-and-drop IDE, was used in the Trinity Firefighting Home
+    Robots Contest. Students often overlooked issues and factors at the heart of
+    computation, such as how various terrains affected the movement of the robot
+    and how the voltage supplied by the power source affected the amount of
+    movement actuated by the robot's drive system. By encapsulating the
+    language and displaying its capabilities in a graphical way, lower-level
+    control of the language is lost.
+
+    \CFirstSteps\
+    Despite its Java implementation, many OO concepts are not available in
+    Alice. While parameters, variables, loops, conditionals, and collections are
+    realized in Alice, encapsulation, inheritance, and polymorphism are not.
+
+  \subsection{IDEs}
+    \subsubsection{BlueJ}
+      Michael K\"olling's BlueJ project is an attempt to provide the benefits of
+      an IDE, a text editor for modifying code directly, and various
+      visualization techniques all in one software package. K\"olling has
+      identified several problems with existing IDEs which make them unsuitable
+      for teaching introductory-level CS courses. BlueJ is an attempt to get
+      around these problems.
+
+      \CKollingBlueJPed\
+      BlueJ is, more than anything else, a truly object-oriented environment.
+      Using BlueJ, instructors are able to quickly make several features of OOP
+      apparent. The class diagram is displayed at the forefront, focusing on the
+      fact that programs are made up of classes that work together and have
+      relationships with one another.
+
+      \CKollingBlueJInspection\
+      Objects can be interacted with and are immediately shown as distinct
+      entities, avoiding the confusion students can experience with the concepts
+      of classes and objects. Objects are shown as having properties and storing
+      data and references. The distinction is made up front.
+
+      Some of the pedagogically-aimed plug-ins to the stand-alone version of
+      BlueJ are \jeliot\ (a program visualization tool) and a sequence diagram
+      editor. By doing this, end users are able to contribute to extend BlueJ's
+      core functionality in ways that were not conceived by its creator or
+      weren't implemented because of time constraints. BlueJ's flexibility and
+      clear presentation of object concepts make it suitable for OO pedagogy.
+    
+      A recurring problem with stand-alone tools is leaving them. The benefit of
+      embedding a tools in IDEs is that once the tool is outgrown or becomes
+      insufficient to accomplish goals, students have an easier time migrating
+      to a more powerful environment.
+      
+      \CBlueJToNetBeans\
+      With BlueJ's recent partnership with the Sun and the \netbeans\ IDE,
+      students using BlueJ will have a powerful set of tools to migrate to when
+      they outgrow BlueJ.
+    
+    \subsubsection{DrJava}
+      DrJava, developed at Rice University, is a lightweight development
+      environment for writing Java programs. It provides an intuitive interface
+      for and the ability to interactively evaluate Java code, as well as more
+      powerful features for advanced users.
+
+      The DrJava plug-in to Eclipse does tame the complexity somewhat by
+      defining an alternate and simpler perspective on Java projects than
+      Eclipse does on its own, but even this can seem overwhelming to beginning
+      students.
+
+      \DrJavaPed\
+      Like in Alice, an approach to simplifying syntax is used by DrJava. Rather
+      than hiding the language, DrJava restricts syntax based on educational
+      level. As the user becomes adept at available concepts and progresses in
+      ability, new constructs are permitted. A list of these can be found in
+      [\ref{BStoler}].
+
+      One problem with DrJava's progression is that it is fixed in both number of
+      stages and order of progression. An example of such a weakness is the
+      availability of \emph{If statements} at the first level. For an educator who
+      wishes to emphasize the power of polymorphism, if statements maybe be
+      undesired, since they tend to be used in favor of polymorphic dispatch.
+    
+      We take advantage of DrJava's read-eval-print loop in our introductory
+      courses to allow students to see direct interaction with variables
+      (particularly arithmetic) and with objects using method calls.
+
+  \subsection{Mathematical Learning}
+    A couple of games developed as part of the \egems\ project at The University
+    of British Columbia use a leveled approach to accomplish their educational
+    ends. Both games begin without much of a mathematical focus; math concepts
+    are introduced after the children become familiar with the basic game
+    concepts. One thing they have in common is increasing the level of
+    difficulty by taking away previously available functionality.
+
+    \cofrank\
+    The increase in difficulty of this game is due to two major factors, the
+    first of which is the increasing range of possible values in the solution.
+    The other factor is the reduction in utility of the solution-tester.
+    
+    \tangrams\
+    There is no indication of an increase in the complexity of the pieces or
+    puzzles, but rather a decrease in the available techniques that can be used
+    to solve them. This differs slightly from the approach used in
+    \emph{Counting on Frank}.
+
+  \subsection{UML Tools}
+    Until now, our UML tools haven't supported pedagogical progression. Instead,
+    they've made all five relationships visible at once. This has often led to
+    confusion and misunderstanding on the part of students: they do not see the
+    significance of slight differences in the appearance of relationships. With
+    Green, not only can relationships be added as labs progress, but the
+    students can see how the different kinds of relationships appear in code. If
+    a relationship exists in code but has not yet been introduced, it will not
+    appear in class diagrams. Hiding unfamiliar functionality in this way may
+    be very beneficial.
+
+    We aim to maximize customization and specialize our effort in the rather
+    limited domain of UML class diagram drawing and recovery. Green accomplishes
+    this by tapping into the plug-in facility of Eclipse upon which Green is
+    built. Like DrScheme and DrJava, Green allows for a progression of exposure
+    to UML elements as students' knowledge and understanding grows. However,
+    unlike tools with a static progression, the user of Green (i.e. the
+    instructor in the course) is free to determine the progression of exposure:
+    the set of relationships which are installed is very easily changed (simply
+    by moving relationship definition files into our out of Eclipse's
+    \emph{plugins} directory (or extension location directory) prior to
+    \emph{startup} (not installation!). Moreover, since the semantics of
+    relationships are not fixed, instructors have the option of providing their
+    own.
+
+    Green supports both engineering and reverse-engineering. Because of this,
+    students are able to edit code directly and see if their code qualifies as a
+    relationship. Likewise, a relationship can be drawn in the diagram, after
+    which the code can be examined to see how that relationship is implemented.
+    These abilities, which stem from Eclipse's \emph{Java Development Tools}
+    (JDT), allow students to see how the diagram corresponds to the code.
+
+    \subsubsection{Blending Green in with Eclipse}
+      In order to best facilitate familiarizing our students with Green, we
+      attempted to make Green as seamless as possible. For example, in the
+      \emph{Package Explorer} view, context menu items appear as appropriate.
+      Green's editor also displays menu items based on what kind of item is
+      selected in the editor.
+
+      Green simplifies a student's experience with Eclipse by providing a
+      convenient way to access a compact set of powerful features, such as
+      refactoring and type hierarchies. The structural properties of a program
+      can be viewed and manipulated from within Green's editor. In an intuitive
+      Eclipse-like manner, double-clicking a field, method, or type opens the
+      location of the respective code.
+
+      Certain aspects of the Eclipse environment impact Green. For example, when
+      creating a new type, Eclipse looks to see if a certain package is selected
+      in the Package Explorer. This gives Green an Eclipse feel; it integrates
+      into its surroundings.
+
+      Green's dialogs are modeled on Eclipse's dialogs. The ``Add Field'' and
+      ``Add Method'' context items bring up windows that mimic the Eclipse
+      dialogs for creating types. The dialogs for the actual Java types are
+      exactly the same dialogs used in Eclipse. Actions such as printing and
+      undo/redo are handled directly  by Eclipse. The keyboard shortcuts and
+      menu items appear and perform exactly as expected.
+    
+    \subsubsection{Benefits of Plug-ins}
+      \figEditor\
+
+      As a plug-in for Eclipse, Green is extensible in many of the same ways as
+      BlueJ. For example, Green offers the user the ability to plug in new types
+      (such as classes, interfaces, and enums), complete with their own dialog
+      and palette icon. 
+
+      The palette on the left consists of two groups of icons. Both groups are
+      controlled by plug-ins. At the beginning of our teaching, our students
+      know only of classes. As the semester progresses, they learn about
+      interfaces and eventually enumerations. By controlling the types as
+      plug-ins, we can allow the students to see only classes in the diagram, or
+      only classes and interfaces, or all three types. We can also incrementally
+      add new kinds of relationships as we progress further into a course.
+
+    \subsubsection{Incremental Exploration}
+      ``Incremental exploration'' is a feature unique to Green as of this
+      writing. It allows the user to explore relationships stemming from a given
+      class.
+      
+      \figExploration
+      
+      Incremental exploration gives the students an idea of how classes are
+      related to other classes in terms of their relationships. Without having
+      to manually look through code, students can get a feel of how objects of
+      a given type will create and use other objects, providing insight into
+      their behavior.
+
+    \subsubsection{Summary of Green}
+      The Eclipse JDT offers a robust set of features not available in most
+      other platforms. With this in mind, we took some of what we considered to
+      be the most useful features, such as Refactoring, and integrated them into
+      Green. This allows our students to manipulate significant parts of the
+      Java code by interacting only with Green. By providing a compact set of
+      operations, we intend to simplify the students' experiences. Refactoring
+      from Eclipse's menus and from Green's context menu perform exactly the
+      same operation; the difference is its convenience of availability.
+
+      It is not necessary for students to ``leave'' Green. As a modeling tool,
+      Green has utility to software engineers in general. From our feedback,
+      we've gathered that Green does an exceptional job at reverse-engineering,
+      despite its lack of focus on behavior.
+
+  \subsection{Support with Other Tools}
+    Simple tools and commercial tools that have a wide array of capabilities
+    have little place in pedagogy, if any. Tools like Violet do not connect
+    concepts with implementation. Tools like Omondo's \eclipseuml\ are too
+    complex for students to benefit from. Free tools that offer limited complex
+    functionality seem to be the best fit, especially when complex functionality
+    can be concealed to benefit new users and capabilities are customizable and
+    extensible.
+
+    For extensibility purposes, Eclipse is a good fit. It is used by
+    individuals, institutions, and corporations, making it likely that our
+    students will encounter it again. Unfortunately, Eclipse is inherently
+    complex. Therefore, a great deal of time must be spent getting used to the
+    environment and learning how to exploit its capabilities. Once understood,
+    it is a very powerful development platform, offering a robust and up-to-date
+    toolkit.
+
+\section{Summary}
+  Tools and environments that grow offer many benefits to their users. The
+  extent to which tools can grow largely determines how appropriate they are
+  for introductory CS education. The approach of staging games and tools meets
+  this need; it can be used to offer additional functionality (such as adding
+  more features to BlueJ) or to remove obsolete mechanisms in an effort to
+  challenge the student to think critically (as E-GEMS does).
+
+  Tools with different specializations (such as static analysis of code or
+  program visualization) can be used in conjunction with one another to offer
+  different perspectives. These tools shouldn't overwhelm their users and should
+  be adaptable to different circumstances, such as being used in curricula which
+  may progress in different stages. Educational tools should have mechanisms by
+  which their features can be staged in a way that increases their pedagogical
+  effectiveness.
+
+  Writing these tools in as extensions to an IDE can facilitate the transition
+  to more powerful development tools. An IDE can be overwhelming; porting tools
+  like DrJava and Green to Eclipse or BlueJ to NetBeans gives students a limited
+  set of functionality to play with, preventing them from having to use the
+  overwhelming set of tools in the environment. A smoother transition can be
+  made after the students are comfortable with the basics.
+
+% bibliography
+\begin{thebibliography}{99}
+  \bibitem{eclipse}
+    http://www.eclipse.org
+  \bibitem{emacs} \label{emacs}
+    http://www.gnu.org/software/emacs/emacs.html
+  \bibitem{drjava} \label{drjava}
+    http://drjava.sourceforge.net
+  \bibitem{munchers} \label{munchers}
+    http://www.mobygames.com/game/dos/number-munchers
+  \bibitem{logo} \label{logo}
+    http://www.cs.berkeley.edu/$\sim$bh/logo.html
+  \bibitem{Violet} \label{Violet}
+    http://www.horstmann.com/violet/
+  \bibitem{green} \label{green}
+    http://green.sourceforge.net
+  \bibitem{drscheme} \label{drscheme}
+    http://www.drscheme.org
+  \bibitem{bluej} \label{bluej}
+    http://www.bluej.org
+  \bibitem{CMKolling}
+    K\"olling, Michael.
+    ``BlueJ - Teaching Java.''
+    30 Jan. 2006.
+    $<$http://www.bluej.org/about/why.html$>$
+  \bibitem{alice} \label{alice}
+    http://www.alice.org
+  \bibitem{mindstorms}
+    http://mindstorms.lego.com
+  \bibitem{DrDobb}
+    Nisley, Ed.
+    ``First Steps.''
+    \em Dr. Dobb's Journal \em, November 2005: 75-77.
+  \bibitem{CKollingPed}
+    M. K\"olling, B. Quig, A. Patterson, J. Rosenberg.
+    ``The BlueJ System and its Pedagogy.''
+    \em Journal of Computer Science Education, Special issue on Learning and
+      Teaching Object Technology\em, Vol 13, No 4, Dec 2003. (PDF)
+  \bibitem{Jeliot} \label{Jeliot}
+    http://www.cs.joensuu.fi/jeliot/description.php
+  \bibitem{NetBeansIDE}
+    Sun Microsystems.
+    ``NetBeans IDE to Provide Support for Leading Educational Tool.''
+    $<$http://www.netbeans.org/about/press/2766.html$>$
+  \bibitem{netbeans} \label{netbeans}
+    http://www.netbeans.org/
+  \bibitem{DrJava}
+    E. Allen, R. Cartwright, B. Stoller.
+    ``DrJava: A Lightweight Pedagogic Environment for Java.''
+    SIGCSE 2002.
+  \bibitem{BStoler} \label{BStoler}
+    B. Stoler.
+    ``A Framework for Building Pedagogic Java Programming Environments.''
+    MS Thesis, Rice University, 2002.
+  \bibitem{egemssite}
+    http://www.cs.ubc.ca/nest/egems/
+  \bibitem{egems}
+    K. Sedighian, M. Klawe.
+    ``An Interface Strategy for Promoting Reflective Cognition in Children.''
+    University of British Columbia, 1996.
+  \bibitem{eclipseuml} \label{eclipseuml}
+    http://www.omondo.com/
+  \bibitem{blank}
+\end{thebibliography}
+
+\end{document}

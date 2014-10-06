@@ -1,0 +1,37 @@
+Meeting on June 26, 2006
+
+	Present: Brian McSkimming, Gene Wang, Adrienne & Carl
+	
+	fix feature list of RC1/RC2 on SourceForge web site.
+	
+	User Manual - (Gene)
+		blurbs about relationships - done
+		installation instructions - needs to be updated
+		Help within Eclipse for Green - needs to be updated
+		
+	To build RC3:
+		move forward from RC2
+			current state of applying this strategy:
+				not much - many file changes
+			want ENUM support
+			want box sizing fix
+			want 999999 bug fix
+			want no relationship from static method fix
+			...everything but memory leak/slowdown problem :-)
+			
+		want to start tagging files with versions moving forward with
+		RC3 release
+		
+		start entering bugs and feature requests and release
+		notes on sourceforge site
+
+	Make use of SourceForge (SF) features
+		release notes
+		docs (put HTML help file tree)
+		update status (from 4-beta to match EPIC status (stable/release))
+		
+		Also make first page at green.sourceforge.net a more descriptive
+		page, letting people know about the project/tool.
+		
+		
+	

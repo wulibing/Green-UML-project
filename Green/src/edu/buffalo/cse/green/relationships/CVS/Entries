@@ -1,0 +1,13 @@
+/CardinalRelationshipGenerator.java/1.17/Thu Jul 12 17:16:22 2007/-kk/
+/DeclarationInfoProvider.java/1.3/Tue Apr  4 18:28:48 2006/-kk/
+/Relationship.java/1.12/Thu Jul 12 17:16:21 2007/-kk/
+/RelationshipCache.java/1.8/Thu Jul 12 17:16:22 2007/-kk/
+/RelationshipGenerator.java/1.23/Thu Jul 12 17:16:22 2007/-kk/
+/RelationshipGroup.java/1.8/Thu Jul 12 17:16:22 2007/-kk/
+/RelationshipRecognizer.java/1.12/Thu Jul 12 17:16:21 2007/-kk/
+/RelationshipRemover.java/1.7/Thu Jul 12 17:16:21 2007/-kk/
+/RelationshipVisitor.java/1.14/Wed Apr  5 21:09:21 2006/-kk/
+D/ast////
+D/controller////
+D/model////
+D/view////

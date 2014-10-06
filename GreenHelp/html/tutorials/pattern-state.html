@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<link rel="stylesheet" type="text/css" href="../default.css">
+<meta http-equiv="Content-type" content="text/xhtml; charset=ISO-8859-1">
+<title>The State Pattern in Green</title>
+</head>
+
+<body>
+
+<b><font size="+1">Setting up Eclipse and Green for our example</font></b>
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+To begin, you need to download the source code for the State Pattern example. 
+The location will be provided by Dr. Alphonce. Right-click in the &quot;Package 
+Explorer&quot; view and select &quot;Import...". Select &quot;Existing Projects 
+into Workspace&quot; and click &quot;Next&quot;, then choose &quot;
+Select archive file&quot; and use &quot;Browse&quot; to locate the archive. 
+Select &quot;Finish&quot; in the &quot;Import&quot; window when you've found the 
+archive.
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Find the file &quot;TrafficLight.dia&quot; and double-click it to open the 
+diagram in the editor.
+
+<table cellpadding="2" cellspacing="3" border="0"><tbody>
+  <tr><td style="vertical-align: top"><img src="../img/CS088.gif"></td>
+  <td style="vertical-align: top">
+    <b><font size="+1">State Design Pattern</font></b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    The best way to describe the state design pattern is by describing a 
+    behavior we all (should) know. A simple traffic light is shown to the left. 
+    In it, we see two lamps, one on top (Red, or STOP) and one on the bottom 
+    (Green, or GO.) The light thus has two separate "states": a "red" state and 
+    a "green" state. Determination of which state comes next will be 
+    <i>delegated</i> to the states.<br>
+
+  <br><b><font size="+1">How state works</font></b>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  The "State" design pattern relies on an arbitary number of objects that 
+  represent the states our main object can have. In our case, the main object is 
+  called "TrafficLight". Our states will share a common interface, which we will 
+  call "ILampState". That interface will define the methods that our states 
+  will have in common.
+</table>
+
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+One behavior a traffic light is responsible for is displaying the current color 
+of the light. Another is the ability to change from one color to another. 
+Double-click on the getColor() method in the diagram inside the "TrafficLight" 
+box. Change the code inside that method to match the following:<br><br>
+
+<table style="width: 100%" border="0" cellpadding="2" cellspacing="2"><tbody>
+  <tr><td style="vertical-align: top; background-color: rgb(192, 192, 192)">
+    <font color="6633FF">public</font> Color getColor() {
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;
+    <font color="#6633FF">return</font> _myState.getColor();<br>}
+</td></tr></tbody></table>
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Notice that the method refers to the variable "_myState", which will be the 
+class' "current state". The TrafficLight class <i>delegates</i> to its states to 
+return what "state" it is currently in. Since all the states share a common 
+interface (ILampState), the method <code>getColor()</code> is guaranteed to be 
+present for all of the <i>implementations</i> of the states. Close the code 
+window.
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Right-click on TrafficLight, go to <i>Add -&gt; AddField</i>. For the name, use 
+<i>_myState</i>. For the type, use <i>ILampState</i>.
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Select the "Interface" tool in the tool pane, then click anywhere on the white 
+space in the UML diagram area to create the interface.</td> Name it "ILampState" 
+and press "Finish".
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Now our diagram has one class (TrafficLight) and one interface for all states to 
+implement (<code>ILampState</code>). We now need to begin defining the methods 
+which our Lamp States must implement. Ask yourself the following: "What does a 
+lamp state need to do?"
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+As we illustrated at the beginning of our tutorial, a lamp state must inform us 
+what state it is in. It has other responsibilities, but at first, we'll just 
+focus on getting the lamp's current color
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Recall that we call a method called <code>getColor()</code> that belongs to 
+ILampState. Since we're defining the method in the interface first, it doesn't need to have 
+a <i>body</i>. When we have <i>concrete implementation</i> of the interface, we 
+will define how the "getColor()" method will actually get the color. Interfaces 
+provide a set of guaranteed methods that concrete classes will have.
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+First, we have to add the method to the interface. Right-click on the interface 
+"ILampState" in the diagram and select <i>Add -&gt; Add Method</i>. A dialog 
+will appear. Name the method <i>getColor</i>. In the Type field, type 
+"java.awt.Color" and click "Finish". Double-click the interface class to look at 
+the code inside. It should look similar to the following:<br><br>
+
+<table style="width: 100%" border="0" cellpadding="2" cellspacing="2"><tbody>
+  <tr><td style="vertical-align: top; background-color: rgb(192, 192, 192)">
+    <font color="6633FF">public interface</font> ILampState {
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;
+    <font color="6633FF">public</font> java.awt.Color getColor();<br>}
+</td></tr></tbody></table>
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Close the code window. What this method means is that anything that is an 
+<i>ILampState</i> must have the ability to do <i>getColor</i>. This method must 
+be defined by our concrete classes. We may be able to see what state we're in by 
+querying the color, but how do we <i>change</i> states? As mentioned before, we 
+have two <i>transitions</i>: Red changes to Green; Green changes to Red. To do 
+this in code, we need another method that will tell us what state to go to next. 
+Follow the steps above to add another method to the interface, except this time 
+you should call the method <i>getNextState</i> and the type <i>ILampState</i>.
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The next step is to provide a way to change from the current state to the next 
+state. Double-click the <i>TrafficLight</i> box. A code window should open up. 
+Change the <i>changeColor</i> method's code to look like the following:<br><br>
+
+<table style="width: 100%" border="0" cellpadding="2" cellspacing="2"><tbody>
+  <tr><td style="vertical-align: top; background-color: rgb(192, 192, 192)">
+    <font color="6633FF">public</font> void changeColor() {
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;
+    _myState = _myState.getNextState();<br>}</td></tr></tbody></table>
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Close the code window. It's time to begin "realizing" our interface into 
+concrete classes that implement our interface. To do this, we first declare the 
+classes that will represent the states. They will be called <i>RedState</i> and 
+<i>GreenState</i>. Create a class for each one in the diagram.
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+We'll use Green to cause the classes to implement <i>ILampState</i>. Select the 
+<i>realization</i> relationship tool from the palette. <i>Realization</i> is a 
+special UML relationship that we use when a class object "implements" an 
+interface.
+
+After selecting the realization tool, click on <i>RedState</i> and then <i>
+ILampState</i>. A relationship arc should appear. You'll notice that there's a 
+problem indicated by a red X in the top left corner of the <i>RedState</i> box.
+<br><img src="../img/afterRealization.jpg">
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The <i>selection</i> tool should now be active; after drawing a relationship, 
+the palette automatically reverts to the default tool after drawing is 
+performed. Double-click on the <i>RedState</i> class to open up the code window. 
+There should be a symbol near the words "public class RedState implements". 
+Click on the error symbol; a small box should appear with a couple options to
+fix the problem. Select <i>Add unimplemented methods</i>. Eclipse will generate 
+<i>method stubs</i> for you, but since it can't possibly know what the methods 
+are supposed to do, the implementation will do nothing. Double-click on the 
+RedState class to open up the code editor<br><br>
+
+Inside the <i>getColor</i> method, put:<br>
+<i>return java.awt.Color.red</i>;<br><br>
+Inside the <i>getNextState</i> method, put:<br>
+<i>return new GreenState</i>();<br>
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Close the code window. You'll want to repeat that entire procedure for the 
+<i>GreenState</i> class, substituting <i>java.awt.Color.green</i> and 
+<i>RedState</i> where appropriate.
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+We need to set an initial state for our traffic light. Open up the 
+<i>TrafficLight</i> class and change the code in the constructor to match the 
+following. This code will be executed when a new <i>TrafficLight</i> is created:
+<br><br>
+
+<table style="width: 100%" border="0" cellpadding="2" cellspacing="2"><tbody>
+  <tr><td style="background-color: rgb(192, 192, 192)">
+    public TrafficLight() {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_myState = new RedState();<br>
+    }
+  </td></tr>
+</tbody></table>
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+In the &quot;Package Explorer&quot; view, click on <i>Runner.java</i> and select 
+<i>Run -&gt; Run As -&gt; Java Application</i> from the menu at the top. A 
+window should appear with a red box. Click on the box; you should observe it 
+change from red to green. If you click again, it will go from green to red. If 
+you're feeling ambitious, try adding a yellow light in.
+
+</body>
+
+</html>

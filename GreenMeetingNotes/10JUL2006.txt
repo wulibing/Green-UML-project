@@ -1,0 +1,23 @@
+Meeting on July 10, 2006
+
+	Present: Brian McSkimming, Gene Wang, Adrienne & Carl
+	
+Accomplishment:
+	Green has been rolled back to RC2, and stored in the repository as two seperate 
+	branches, RC2 & RC3.
+	
+It has been recogonized that developer level design documents are needed, and that work
+should begin on those. This includes green's interactions with GEF, the eclipse framework,
+and so on.
+
+RC2 concerns -- On Generalization and Realization relationships, the cardinality is being
+requested when it shouldn't be.  This was edited and corrected during the meeting.
+
+Goals:
+	-- Get all bugs currently known, as well as feature requests listed on Sourceforge.
+	-- Continue development and advancement of the RC3 branch in an attempt to bring it up
+	   to the point when Blake left, only without the massive memory leak.
+	-- Update the website to include a more meaningful main page, as well as additional
+	   download links and a documentation section
+	-- Enum Support
+		

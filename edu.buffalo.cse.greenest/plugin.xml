@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="edu.buffalo.cse.greenest.commands.category"
+            name="Sample Category">
+      </category>
+      <command
+            categoryId="edu.buffalo.cse.greenest.commands.category"
+            id="edu.buffalo.cse.greenest.commands.sampleCommand"
+            name="Sample Command">
+      </command>
+      <command
+            defaultHandler="org.eclipse.ui.internal.handlers.OpenInNewWindowHandler"
+            id="edu.buffalo.cse.greenest.Activator.java"
+            name="Green">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="edu.buffalo.cse.greenest.handlers.ActivationHandler"
+            commandId="edu.buffalo.cse.greenest.commands.popup.showSelected">
+      </handler>
+      <handler
+            commandId="edu.buffalo.cse.greenest.handler1">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="edu.buffalo.cse.greenest.commands.sampleCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+6">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="edu.buffalo.cse.greenest.toolbars.sampleToolbar">
+            <command
+                  commandId="edu.buffalo.cse.greenest.commands.sampleCommand"
+                  icon="icons/sample.gif"
+                  id="edu.buffalo.cse.greenest.toolbars.sampleCommand"
+                  tooltip="Say hello world">
+            </command>
+         </toolbar>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <menu
+               label="Green(est) UML">
+            <command
+                  commandId="edu.buffalo.cse.greenest.GreenestDiagramEditor.java"
+                  label="Add to Class Diagram"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+
+</plugin>

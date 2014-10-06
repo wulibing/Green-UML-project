@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="Green UML" url="http://www.cse.buffalo.edu/faculty/alphonce/green">
+      project green relaunched.
+   </description>
+   <feature url="features/GreenestFeature_1.0.0.201304091034.jar" id="GreenestFeature" version="1.0.0.201304091034"/>
+</site>

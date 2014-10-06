@@ -1,0 +1,20 @@
+Meeting on July 5, 2006
+
+	Present: Brian McSkimming, Gene Wang, Adrienne & Carl
+	
+	User Manual - (Gene)
+		Working on HTML docs
+		To tag/branch the docs to keep them in synch with
+			tagging/branching of corresponding code
+		Must ensure that docs posted on sourceforge correspond
+			to the docs in release
+		
+	RC2 versions of files identified
+		To be tagged and set as main branch
+		Anything past RC2 must be tagged as the RC3 branch
+		Create 2 branches alongside the HEAD
+			one to be used to recover an RC2, which won't be modified
+			one to be used to create an RC2 base which will become RC3
+		Once 2.5 is released, 2.5 will be merged with HEAD.
+		
+	

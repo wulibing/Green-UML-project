@@ -1,0 +1,175 @@
+Green RC2 Version Numbers:
+
+Green Project:
+	edu.buffalo.cse.green
+		GreenException -- 1.5
+		JavaModelListener -- 1.24
+		PlugIn.xml -- 1.30
+		RelationshipSubType -- Unchanged
+	
+	edu.buffalo.cse.green.action
+		AddJavaFileAction -- Unchanged
+		OpenNewEditorAction -- Unchanged
+	
+	edu.buffalo.cse.green.constants
+		DialogStrings -- 1.9
+		PaletteStrings -- Unchanged
+		RelationshipErrorMessages -- Unchanged
+		XMLConstants -- Unchanged
+		
+	edu.buffalo.cse.green.designpatterns --> Entire Package Unchanged
+	
+	edu.buffalo.cse.green.dialogs
+		NewElementWizardSettings -- NEW FILE NOT IN RC2
+		NewMemberSignatureWizard -- FILE REMOVED AFTER RC2
+		ChooseMethodsDialog -- 1.4
+		ChooseTypeDialog -- 1.1
+		ChooseTypeWizard -- Unchanged
+		GreenWizard -- Unchanged
+		ManageFiltersDialog -- 1.2
+		MethodDialogListener -- 1.2
+		NewElementWizard -- 1.2
+		NewFieldWizard -- 1.1
+		NewMethodWizard -- 1.1
+		TypeNameInfo -- Unchanged
+		
+	edu.buffalo.cse.green.editor
+		Context -- NEW FILE NOT IN RC2
+		OutlinePage -- NEW FILE NOT IN RC2
+		DiagramEditorFilePolicies -- FILE REMOVED AFTER RC2
+		DiagramPaletteFactory -- FILE REMOVED AFTER RC2
+		DiagramPartFactory -- FILE REMOVED AFTER RC2
+		Filter -- FILE REMOVED AFTER RC2
+		ISaveFormat -- MOVED TO edu.buffalo.cse.green.editor.save
+		DiagramActionBarContributer -- Unchanged
+		DiagramEditor -- 1.46
+		
+	edu.buffalo.cse.green.editor.action
+		OpenHeirarchyAction -- NEW FILE NOT IN RC2
+		QuickFix -- NEW FILE NOT IN RC2
+		QuickFixAction -- NEW FILE NOT IN RC2
+		OpenTypeHeirarchyAction -- FILE REMOVED AFTER RC2
+		AddFieldAction -- Unchanged
+		AddMethodAction -- Unchanged
+		AlterRelationshipVisibilityAction -- Unchanged
+		ContextAction -- 1.23
+		DeleteAction -- 1.14
+		EditNoteAction -- Unchanged
+		FilterAction -- Unchanged
+		IncrementalExploreAction -- Unchanged
+		OpenCallHeirarchyAction -- Unchanged
+		OpenElementAction -- Unchanged
+		OpenSuperImplementationAction -- Unchanged
+		OpenTypeAction -- 1.8
+		PrintDIAAction -- Unchanged
+		RedoAction -- Unchanged
+		RefactorMethodSignatureAction -- Unchanged
+		RefactorMoveAction -- Unchanged
+		RefactorRenameAction -- Unchanged
+		RefreshAction -- Unchanged
+		RemoveTypeAction -- Unchanged
+		Submenu -- Unchanged
+		UndoAction -- Unchanged
+		UseSizeAction -- 1.2
+		
+	edu.buffalo.cse.green.editor.controller
+		PropertyChange -- NEW FILE NOT IN RC2
+		PropertyListener -- NEW FILE NOT IN RC2
+		AbstractPart -- 1.17
+		CompartmentPart -- 1.15
+		FieldPart -- 1.18
+		MemberPart -- 1.11
+		MethodPart -- 1.20
+		NotePart -- 1.14
+		RelationshipPart -- 1.15
+		RootPart -- 1.1
+		TypePart -- 1.27
+		
+	edu.buffalo.cse.green.editor.controller.policies
+		BendableRelationshipPolicy -- 1.8
+		CreateRelationshipCommand -- Unchanged
+		DeleteEditPolicy -- Unchanged
+		DiagramLayoutEditPolicy -- 1.10
+		GreenSelectionEditPolicy -- Unchanged
+		RelationshipLayoutEditPolicy -- Unchanged
+		RelationshipSelectionEditPolicy -- Unchanged
+		RelationshipSourceTargetCreationEditPolicy -- Unchanged
+		
+	edu.buffalo.cse.green.editor.model
+		AbstractModel -- 1.23
+		CompartmentModel -- 1.19
+		FieldModel -- Unchanged
+		MemberModel -- 1.18
+		MethodModel -- 1.16
+		NoteModel -- 1.14
+		RelationshipKind -- Unchanged
+		RelationshipModel -- 1.26
+		RootModel -- 1.3
+		TypeModel -- 1.33
+		
+	edu.buffalo.cse.green.editor.model.commands
+		ActivationSelectionToolCommand -- 1.3
+		AddFieldCommand -- 1.3
+		AddJavaElementCommand -- Unchanged
+		AddMethodCommand -- 1.3
+		AlterRelationshipVisibilityCommand -- Unchanged
+		CreateBendpointCommand -- 1.8
+		CreateCommand -- Unchanged
+		DeleteBendpointCommand -- Unchanged
+		DeleteCommand -- Unchanged
+		DeleteFieldCommand -- Unchanged
+		DeleteMethodCommand -- Unchanged
+		DeleteNoteCommand -- Unchanged
+		DeleteTypeCommand -- 1.8
+		EditNoteCommand -- Unchanged
+		HideRelationshipCommand -- Unchanged
+		IncrementalExploreCommand -- Unchanged
+		MoveBendPointCommand -- 1.3
+		RemoveTypeCommand -- Unchanged
+		SetConstraintCommand -- 1.6
+		ShowRelationshipCommand -- Unchanged
+		
+	edu.buffalo.cse.green.editor.model.filters
+		MemberFilter -- Unchanged
+		MemberVisibility -- 1.1
+		
+	edu.buffalo.cse.green.editor.save
+		ISaveFormat -- NEW FILE NOT IN RC2
+		GIFFormat -- Unchanged
+		GreenFormat -- 1.2
+		JPEGFormat -- Unchanged
+		
+	edu.buffalo.cse.green.editor.view -- ENTIRE PACKAGE UNCHANGED
+	
+	edu.buffalo.cse.green.preferences
+		VariableAffix -- NEW FILE NOT IN RC2
+		GreenPreferencePage -- 1.7
+		GreenPreferencePageClassBox -- Unchanged
+		GreenPreferencePageColors -- Unchanged
+		PreferenceInitializer -- 1.11
+		
+	edu.buffalo.cse.green.relationships
+		DeclarationInfoProvider -- NEW FILE NOT IN RC2
+		ASTPrettyPrintVisitor -- FILE REMOVED AFTER RC2
+		CardinalRelationshipGenerator -- 1.9
+		Relationship -- Unchanged
+		RelationshipCache -- Unchanged
+		RelationshipGenerator -- 1.18
+		RelationshipGroup -- 1.7
+		RelationshipRecognizer -- Unchanged
+		RelaitonshipRemover -- Unchanged
+		RelationshipVisitor -- 1.10
+		
+	edu.buffalo.cse.green.types
+		ClassTypeProperties -- MOVED FROM edu.buffalo.cse.green.types.tclass
+		EnumTypeProperties -- NEW FILE NOT IN RC2
+		InterfaceTypeProperties -- MOVED FROM edu.buffalo.cse.green.types.tinterface
+		NewClassWizard -- MOVED FROM edu.buffalo.cse.green.types.tclass
+		NewEnumWizard -- NEW FILE NOT IN RC2
+		NewInterfaceWizard -- MOVED FROM edu.buffalo.cse.green.types.tinterface
+		ITypeProperties -- 1.1
+		
+	edu.buffalo.cse.green.util -- ENTIRE PACKAGE UNCHANGED
+	
+	edu.buffalo.cse.green.XMLConverter -- ENTIRE PACKAGE UNCHANGED
+	

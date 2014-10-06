@@ -1,0 +1,28 @@
+Last Modified: 09/15/2006
+
+Features/Updates since RC2:
+
+o Enum Support
+o Quick Fix Added
+o Ability to use preferred path when generating variable names
+o Made relationships plug-in-added [Individual relationships may be "uninstalled" without affecting plugin stability]
+o Added Outline View
+o Default Relationship Line Size edited for visibility (May cause issues on MAC OS, this was not tested)
+o All DIA files are now created in the project root by default. To change this, go to Preferences > Green and deselect "Create all DIA files in project root".
+o Javadocs can now be shown while hovering over a class box. To enable them, go to Preferences > Green > Class Boxes and select "Show tooltips while hovering over elements".
+
+
+Bug Fixes/Error Corrections since RC2:
+o 9999999 Cardinality Bug fix
+o Fixed Appearance of Wizards
+o Prevented error from method parameter names not being available (e.g. No Attached Source)
+o Most of the bendpoint issues have been corrected
+o Fixed bugs with caching models in commands
+o Corrected bug with deletion of recursive classes (e.g. String)
+o Size setting bug fixed
+o Filter bug fixed
+
+Recognized Issues that are being Worked On:
+o Lack of support for Static Inner Classes (relationships not all recognized properly)
+o No More Handles error
+o Occasional bendpoint issues

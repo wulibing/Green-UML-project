@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<link rel="stylesheet" href="../default.css"/>
+<meta http-equiv="Content-type" content="text/xhtml; charset=ISO-8859-1">
+<title>Creating a Relationship Between Two Classes</title>
+</head>
+
+<body>
+
+<b><font size="+1">Creating a Relationship in Green</font></b><br>
+
+One of Green's most useful features is its ability to generate code by drawing 
+class diagrams. The tutorial below covers the drawing of types and 
+relationships.<br>
+
+<table cellpadding="2" cellspacing="3" border="0"><tbody>
+  <tr><td style="vertical-align: top"><b>Step 1</b><br>
+    First, open eclipse and create an empty project. To create a new project 
+    click File-&gt;New-&gt;Project....</td>
+  <td style="vertical-align: top"><img src="../img/newproject.jpg"></td></tr>
+
+  <tr><td style="vertical-align: top"><b>Step 2</b><br>
+    Select Java Project and click "Next".<br></td>
+  <td style="vertical-align: top"><img src="../img/newjavaproject.jpg"></td></tr>
+
+  <tr><td style="vertical-align: top"><b>Step 3</b><br>
+    Give the project a simple name such as 'RelationshipTutorial'.<br><br>You 
+    can safely click "Finish" now, so go ahead and do so.<br></td>
+  <td style="vertical-align: top"><img src="../img/newtutorialproject.jpg"></td></tr>
+
+  <tr><td style="vertical-align: top"><b>Step 4</b><br>
+    Right-click the project and select "Open in UML class diagram".<br><i>You 
+    can also open existing projects this way.</i></td>
+  <td style="vertical-align: top"><img src="../img/openindiagram.jpg"></td></tr>
+
+  <tr><td style="vertical-align: top"><b>Step 5</b><br>
+    Now we have to create some classes. To create a class, select the class tool 
+    from the pallette on the left and draw a box.</td>
+  <td style="vertical-align: top"><img src="../img/drawingclass.jpg"></td></tr>
+
+  <tr><td style="vertical-align: top">When you let go of the mouse the Eclipse 
+    New Java Class dialog will appear. Enter the package name "test.pkg", and 
+    type name, "<code>ClassA</code>", then click "Finish".<br><br>Now create a 
+    second class in the same package called "ClassB".</td>
+  <td style="vertical-align: top"><img src="../img/namenewclass.jpg"></td></tr>
+
+  <tr><td style="vertical-align: top"><b>Step 6</b></br>
+    At this point we should have 2 UML Type boxes in our diagram. All we have to 
+    do now is create a relationship between them.<br><br>To create a 
+    relationship you must first select the tool for that relationship from the 
+    palette. Next, click the source type. Finally, click the target type. Try 
+    creating a "Composition" relationship from ClassA to ClassB</td>
+  <td style="vertical-align: top"><img src="../img/relationshiptutorialstep6.jpg"></td></tr>
+</tbody></table>
+
+<img src="../img/relationshiptutorialfinal.jpg"><br>
+We've just created a UML diagram! You may be wondering why fields and methods 
+were added to one of the types. That's because Green automatically generates the 
+code for these relationships as you create them! You can even rename fields and 
+methods in the diagram. You can also save the diagram as a picture. See the 
+features section for information on how to do that.
+
+</body>
+
+</html>

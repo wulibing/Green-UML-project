@@ -1,0 +1,112 @@
+Post this on SF and incorporate some into the EPIC page.
+
+2.5.0 Release Plan
+
+	Bugs to be fixed
+
+		- Eclipse integration
+OK		  = .dia files: "Open with ..." > "Green (UML class diagram editor)"
+OK		  = add "New..." > "Green UML class diagram" --> wizard for save location?
+		    should also tie into File->New (with ICON!)
+OK		  = remove the "Open new UML class diagram"
+
+Done[Nov08.06]Brian  FOR .java files, packages, and Java projects
+			  = "Green..." > "Add to last viewed class diagram"
+			  = "Green..." > "Add to new class diagram"
+
+Done[Nov08.06]Brian  FOR .class files, packages, and Java projects
+			  = "Green..." > "Add to last viewed class diagram"
+			  = "Green..." > "Add to new class diagram"
+			  
+OK		  FOR .dia files --> just regular open
+		  
+		  In diagram context menu
+OK		  	 Done bmm  = "Print class diagram"
+		  The following are folded into the "Save as...", in keeping
+		  with Windows conventions:
+		  	  = "Export as image..." > "jpeg"
+		  	  = "Export as image..." > "gif"
+Done[Nov08.06]Brian = "Save/Save As..."
+
+Done[Nov08.06]Brian = remove "Filters..."
+
+Done[Nov08.06]Brian = keep other context menu items - interpret this in context :-)
+		  	  
+Done[Nov30.06]Brian - In toolbar, use standard icons (e.g. redo, undo, ...) rather than words.
+			Now these are in their own Menu bar, and much more discrete.  Plus the normal
+			Print icon lights up when our editor is selected.
+
+Done[Oct06.06]Gene: for some reason, in workspace saves were limited to .dia types only 
+			this limitation was removed - jpeg save-as issue
+			saving within workspace doesn't work
+Done[Oct06.06]Gene - change hovers over "class" "interface" "enum" and "note" to remove
+			"diagram"
+
+CHECKED UP TO HERE ON APR.03.07
+
+Done[Oct06.06]Gene - In docs, remove (*) for new items.
+	   		= in Eclipse plug-in
+	   		= on SourceForge
+Done[Oct06.06]Gene - fixed error with default file name not showing in the save dialog
+			when doing Save As...
+Done[Oct09.06]Gene - delete: when two Java files are open, deleting the relationship
+			removes the code, does not save the java file, and hence does not
+			update the diagram [had to do with working copy not being updated]
+Done[Oct10.06]Gene - renamed extension to .grn, implemented backwards
+			compatibility with .dia's.
+			*** back off this change and put into a 3.0 release [DONE]
+Done[Oct10.06]Gene: rewrote GIF 8bit converter, it's got a funny color scheme 
+			now - gif save-as issue 
+			doesn't work properly - if we get it working, make sure docs are updated
+			to reflect this
+Done[Oct18.06]Brian - Unit Tests are buggy [user error :-) -- Eclipse window must be maximized
+			when running the unit tests - very (un)intuitive...]
+Done[Jan29.07]Gene - When you try to delete a class from within the diagram, a null pointer
+            exception is thrown.
+Done[Feb27.07]Brian/Gene: The PREFERENCE to auto-generate constructor stubs from
+       	    superclass SHOULD cause the "generate constructors from superclass" option
+            in class creation dialog box to be checked by default; unchecking it should
+            cause the option to be unchecked in the class creation dialog box by default.
+            Underlying problem: settings file for New Class Wizard not being accessed
+            properly.
+Done[Feb28.07]Gene: Added two more preferences (in addition to the constructor
+            preference which we just added), to set a default value for the class
+            creation dialog.
+              - inherit abstract methods (default checked)
+              - add main method (default unchecked)
+Done[Apr06.07]Gene - removed separator between context menu items 
+
+CHECKED UP TO HERE ON APR.17.07
+
+Done[May18.07]All - Getting Help section
+		  = FAQ (installation problems (no GEF), how do I save as JPG,...)
+		    - Make sure Java 1.5 is used by Eclipse to load the plug-in
+		  = Help in Eclipse
+		  	  = clean up TOC organization
+		  	  = make page for contents of Help, not just one big file
+		  	  = review contents for correctness/completeness/clarity
+		  	  = add a section background/philosophy of Green
+			  = Info about how to subscribe to GREEN-DISCUSS-LIST
+		            submit a bug report
+		            make a feature request
+		            contact development team
+		            vote on EPIC, comment on EPIC
+		            add link to Green's sourceforge site
+		      = Update screen shots
+
+Done[May18.07]Gene - the Green code generation taps into the code behavior specified in Eclipse.
+			By going to Window->Preferences->Java->Code Style, prefixes/suffixes can be defined
+			by the user which in turn is taken into consideration by Green when generating
+			the appropriate variables.
+			- generated instance variable names should have "_" at front (perhaps make prefix
+			string an option)
+			- What was thought to once be done is not as such.  -- needs to tie in Eclipse's 
+			preference into green so that when creating a field through a diagram, it takes
+			said preference into account
+			- all variable creation should now take into account the Eclipse preferences through
+			edu.buffalo.cse.green.preferences.VariableAffix
+			- Add default prefix to name section in new field dialog before user types in name
+     
+Note: Do NOT put '>' or '<' in text of notes.
+
+       

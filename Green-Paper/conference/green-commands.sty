@@ -1,0 +1,123 @@
+% title variables
+\newcommand{\myTitle}
+  {Using Software Engineering Tools to Support Sound Pedagogy}
+\newcommand{\myAuthorName}
+  {Blake Martin}
+\newcommand{\myAuthorLoc}
+  {University at Buffalo \\ Buffalo, NY 14261}
+\newcommand{\myEmail}
+  {bcmartin@cse.buffalo.edu}
+
+\newcommand{\alice}{Alice\cite{alice}}
+\newcommand{\bluej}{BlueJ\cite{bluej}}
+\newcommand{\drjava}{DrJava\cite{drjava}}
+\newcommand{\drscheme}{DrScheme\cite{drscheme}}
+\newcommand{\eclipse}{Eclipse\cite{eclipse}}
+\newcommand{\eclipseuml}{EclipseUML\cite{eclipseuml}}
+\newcommand{\egems}{E-GEMS\cite{egemssite}}
+\newcommand{\emacs}{Emacs\cite{emacs}}
+\newcommand{\green}{Green\cite{green}}
+\newcommand{\jeliot}{Jeliot\cite{Jeliot}}
+\newcommand{\logo}{Logo\cite{logo}}
+\newcommand{\mindstorms}{Lego Mindstorms\cite{mindstorms}}
+\newcommand{\munchers}{Number Munchers\cite{munchers}}
+\newcommand{\netbeans}{NetBeans\cite{netbeans}}
+\newcommand{\violet}{Violet\cite{Violet}}
+
+% citations
+\newcommand{\CBlueJToNetBeans}{
+  \begin{bq}
+    The NetBeans/BlueJ Edition will -- for the first time -- offer an obvious
+    and clean way to move from one to the other. Students will immediately feel
+    comfortable in this IDE and can start using professional tools gradually and
+    in an organized manner. It will make a huge difference in a teaching
+    situation\cite{NetBeansIDE}.
+  \end{bq}}
+\newcommand{\CKollingBlueJPed}{
+  \begin{bq}
+    One of the central aspects of the BlueJ environment is the class structure
+    display in its main window. This forces students to recognize and think
+    about structure from the very first time they see a Java program. When
+    showing students the very first example program, it becomes immediately
+    clear that an application is a set of cooperating classes\cite{CKollingPed}.
+  \end{bq}}
+\newcommand{\CKollingWhy}{
+  ``Why yet another programming environment? The short answer is because none
+  of the existing environments is suitable for teaching. Several aspects in
+  existing environments cause a long list of problems in
+  teaching\cite{CMKolling}.''
+  }
+\newcommand{\CKollingBlueJInspection}{
+  \begin{bq}
+    Using BlueJ, a teacher can interactively create multiple objects of a class
+    and inspect and interact with every one of them. The relationship between
+    classes and objects usually becomes clear very quickly\cite{CKollingPed}.
+  \end{bq}}
+\newcommand{\CFirstSteps}{
+  \begin{bq}
+    Lego Mindstorms sets provide the raw materials for many Junior robots
+    because snap-together parts eliminate the need for advanced mechanical
+    skills and a GUI IDE eliminates programming syntax errors. Unfortunately,
+    Lego motors spin at rates depending on the mechanical load, battery voltage,
+    and wheel traction. As a result, navigation poses a major
+    challenge\cite{DrDobb}.
+  \end{bq}}
+\newcommand{\DrJavaPed}{
+  \begin{bq}
+    The interactions window provides a mechanism that enables students to
+    evaluate Java expressions and statements including statements that define
+    new variables. This is particularly helpful in introductory programming
+    classes because it enables students to experiment with the behavior of
+    language constructs and determine the results of subcomputations within a
+    program\cite{DrJava}.
+  \end{bq}}
+\newcommand{\cofrank}{
+  \begin{bq}
+    The pedagogical goal of Counting on Frank is to teach the children the
+    concepts of ordering, inequality, place value, number patterns, and modular
+    arithmetic. Clues are given to permit logical deduction, leading to the
+    puzzle's solution.
+    
+    The game has three levels of difficulty, where the bounds of the possible
+    solution increase. A \emph{solution-tester} is also present, which
+    automatically applies a group of selected clues. By restricting the number
+    of clues that can be applied at later levels, the player is required to
+    consider which clues would best constrain the feasible choices\cite{egems}.
+  \end{bq}}
+\newcommand{\tangrams}{
+  \begin{bq}
+    The pedagogical aim of Super Tangrams is to stimulate the children to think
+    about the formal mathematics involved in 2D transformations. The game
+    simulates the traditional tangram activity in which 7 geometric shapes must
+    be fitted together to fill in an outline.
+
+    The first version of the game involved a set angle of rotation that always
+    occurred around the piece's center. Oversimplifying the UI hid the
+    mathematical concepts children were supposed to glean. By providing less
+    visual feedback about the transformations at later levels, we were able to
+    effectively stimulate intense engagement with the formal mathematical
+    structures without discouraging the player\cite{egems}.
+  \end{bq}}
+
+% figures
+\newcommand{\figEditor}{
+  \begin{centeredps}
+    \psfig{file=green-editor-ss.ps,width=3.1in}
+    \caption{When Eclipse loads up, it searches for available plug-ins. It
+      collects information about the plugins available to Green, which then
+      displays them in its editor as appropriate (note the palette circled
+      above). Types (class, enum, interface) and relationships can be controlled
+      by the system administrator. A folder outside of Eclipse's directory
+      structure can be used to control which plugins are available at different
+      points during a course.}
+    \label{editor}
+  \end{centeredps}}
+\newcommand{\figExploration}{
+  \begin{centeredps}
+    \psfig{file=green-incr-expl.ps,width=3.1in}
+    \caption{After incrementally exploring from the String class, we can see
+      that it has dependencies on four other classes and that it implements
+      three interfaces. The class boxes are automatically loaded into the
+      diagram.}
+    \label{exploration}
+  \end{centeredps}}

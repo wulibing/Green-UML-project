@@ -1,0 +1,42 @@
+Meeting on July 24, 2006
+
+	Present: Brian McSkimming, Gene Wang & Adrienne
+	
+Accomplishments:
+	RC3 has been advanced to its 4/27/06 point.  Fixes, according to commit notes, include:
+		Doesn't display dialog if type has no methods
+		Fixed appearance of wizard
+		Restructed element wizards
+		Javadoc additions
+		Editor automatically refreshed after command is executed
+		Debugging Fixed --> Root Menu causing problem
+		Prevented error from method parameter names not being available (e.g. no available
+		  source)
+		Workaround for bendpoint location saving bug
+		Made type validity checked plugin-orientated
+		Changed automatic generation of fields to manual
+		Added ability to use preferred prefix when generating variable names
+	Work on design documentation
+	
+
+-- It was noticed that Sourceforge is still not sending any bug notices to development
+   team members.  It appears that only if one chooses to monitor a bug, or creates 
+   that bug do any updates get sent to a team member.  
+-- Static methods are being initially ignored with regards to relationships, however upon
+   refreshing the diagram they are being displayed.  This seems like they are being created
+   and added to the diagram, and being ignored initially, however from a design perspective
+   perhaps they should not be added to the diagram at all. 
+
+Goals:
+	-- Continue advancement of RC3 to the final updates, ending on 5/10/06.  There appear 
+	   to only be 4 major commits up to that point.
+	-- Repair the Debug: The majority of tests either fail or error out.  This may be a 
+	   result of the project not being at its final commited state, however the tests were
+	   returned to THEIR final commited state, so everything should pass, yet none do.
+	-- Change default relationship line width to the far left option, as the dotted lines
+	   are noticable as dotted lines.
+	-- Research the static method bug referenced earlier, and added to Sourceforge during
+	   the meeting.
+	
+	
+		

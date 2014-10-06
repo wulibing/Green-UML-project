@@ -1,0 +1,83 @@
+<uml>
+   <greenVersion="20501"/>
+   <type>
+      <name="=GreenCodeToRunAgainst/<lrstruct{LRStruct.java[LRStruct[AState"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="359"/>
+      <y="315"/>
+   </type>
+   <type>
+      <name="=GreenCodeToRunAgainst/<lrstruct{LRStruct.java[LRStruct[EmptyState"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="574"/>
+      <y="550"/>
+   </type>
+   <type>
+      <name="=GreenCodeToRunAgainst/<lrstruct{LRStruct.java[LRStruct[NonEmptyState"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="168"/>
+      <y="576"/>
+   </type>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=GreenCodeToRunAgainst/<lrstruct{LRStruct.java[LRStruct[NonEmptyState"/>
+      <targetType="=GreenCodeToRunAgainst/<lrstruct{LRStruct.java[LRStruct[AState"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=GreenCodeToRunAgainst/<lrstruct{LRStruct.java[LRStruct[EmptyState"/>
+      <targetType="=GreenCodeToRunAgainst/<lrstruct{LRStruct.java[LRStruct[AState"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=GreenCodeToRunAgainst/<lrstruct{LRStruct.java[LRStruct[AState"/>
+      <targetType="=GreenCodeToRunAgainst/<lrstruct{LRStruct.java[LRStruct[NonEmptyState"/>
+      <bendpoints>
+         <bendpoint>
+            <x="397"/>
+            <y="535"/>
+         </bendpoint>
+      </bendpoints>
+   </relationship>
+   <type>
+      <name="=GreenCodeToRunAgainst/C:\/Program Files\/Java\/jre1.5.0_06\/lib\/rt.jar<com.sun.corba.se.impl.legacy.connection(LegacyServerSocketManagerImpl.class[LegacyServerSocketManagerImpl"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="200"/>
+      <y="400"/>
+   </type>
+   <type>
+      <name="=GreenCodeToRunAgainst/C:\/Program Files\/Java\/jre1.5.0_06\/lib\/rt.jar<java.lang(String.class[String"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="600"/>
+      <y="400"/>
+   </type>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=GreenCodeToRunAgainst/C:\/Program Files\/Java\/jre1.5.0_06\/lib\/rt.jar<java.lang(String.class[String"/>
+      <targetType="=GreenCodeToRunAgainst/C:\/Program Files\/Java\/jre1.5.0_06\/lib\/rt.jar<java.lang(String.class[String"/>
+      <bendpoints>
+         <bendpoint>
+            <x="40"/>
+            <y="0"/>
+         </bendpoint>
+         <bendpoint>
+            <x="40"/>
+            <y="-40"/>
+         </bendpoint>
+         <bendpoint>
+            <x="0"/>
+            <y="-40"/>
+         </bendpoint>
+      </bendpoints>
+   </relationship>
+</uml>
+
